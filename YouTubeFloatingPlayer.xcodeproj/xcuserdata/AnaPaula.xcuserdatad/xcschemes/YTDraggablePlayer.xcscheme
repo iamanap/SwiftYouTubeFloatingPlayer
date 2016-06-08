@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CC42478B1CEE3E1C009D960F"
-               BuildableName = "YTDraggablePlayer.app"
-               BlueprintName = "YTDraggablePlayer"
-               ReferencedContainer = "container:YTDraggablePlayer.xcodeproj">
+               BuildableName = "YouTubeFloatingPlayer.app"
+               BlueprintName = "YouTubeFloatingPlayer"
+               ReferencedContainer = "container:YouTubeFloatingPlayer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CC42479F1CEE3E1C009D960F"
-               BuildableName = "YTDraggablePlayerTests.xctest"
-               BlueprintName = "YTDraggablePlayerTests"
-               ReferencedContainer = "container:YTDraggablePlayer.xcodeproj">
+               BuildableName = "YouTubeFloatingPlayer.xctest"
+               BlueprintName = "YouTubeFloatingPlayerTests"
+               ReferencedContainer = "container:YouTubeFloatingPlayer.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CC4247AA1CEE3E1C009D960F"
-               BuildableName = "YTDraggablePlayerUITests.xctest"
-               BlueprintName = "YTDraggablePlayerUITests"
-               ReferencedContainer = "container:YTDraggablePlayer.xcodeproj">
+               BuildableName = "YouTubeFloatingPlayer.xctest"
+               BlueprintName = "YouTubeFloatingPlayerUITests"
+               ReferencedContainer = "container:YouTubeFloatingPlayer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC42478B1CEE3E1C009D960F"
-            BuildableName = "YTDraggablePlayer.app"
-            BlueprintName = "YTDraggablePlayer"
-            ReferencedContainer = "container:YTDraggablePlayer.xcodeproj">
+            BuildableName = "YouTubeFloatingPlayer.app"
+            BlueprintName = "YouTubeFloatingPlayer"
+            ReferencedContainer = "container:YouTubeFloatingPlayer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC42478B1CEE3E1C009D960F"
-            BuildableName = "YTDraggablePlayer.app"
-            BlueprintName = "YTDraggablePlayer"
-            ReferencedContainer = "container:YTDraggablePlayer.xcodeproj">
+            BuildableName = "YouTubeFloatingPlayer.app"
+            BlueprintName = "YouTubeFloatingPlayer"
+            ReferencedContainer = "container:YouTubeFloatingPlayer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC42478B1CEE3E1C009D960F"
-            BuildableName = "YTDraggablePlayer.app"
-            BlueprintName = "YTDraggablePlayer"
-            ReferencedContainer = "container:YTDraggablePlayer.xcodeproj">
+            BuildableName = "YouTubeFloatingPlayer.app"
+            BlueprintName = "YouTubeFloatingPlayer"
+            ReferencedContainer = "container:YouTubeFloatingPlayer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

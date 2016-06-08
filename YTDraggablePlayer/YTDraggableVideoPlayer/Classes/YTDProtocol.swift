@@ -12,20 +12,28 @@ protocol YTDProtocol { }
 
 extension YTDProtocol {
     
-    func initYTD(url: NSURL) {
-        dragViewController?.setURLs([url])
+    func initYTD(url: NSURL, tableCellNibName: String, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+        dragViewController = YTDViewController(nibName: "YTDViewController", bundle: nil)
+        dragViewController?.urls = [url]
+        dragViewController?.delegate = delegate
+        dragViewController?.dataSource = dataSource
+        dragViewController?.tableCellNibName = tableCellNibName
     }
     
-    func initYTD(urls: [NSURL]) {
-        dragViewController?.setURLs(urls)
+    func initYTD(urls: [NSURL], tableCellNibName: String, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+        dragViewController = YTDViewController(nibName: "YTDViewController", bundle: nil)
+        dragViewController?.urls = urls
+        dragViewController?.delegate = delegate
+        dragViewController?.dataSource = dataSource
+        dragViewController?.tableCellNibName = tableCellNibName
     }
     
     func changeURL(url: NSURL) {
-        dragViewController?.setPlayerURLs([url])
+        dragViewController?.urls = [url]
     }
     
-    func changeURL(url: [NSURL]) {
-        dragViewController?.setPlayerURLs(url)
+    func changeURLs(urls: [NSURL]) {
+        dragViewController?.urls = urls
     }
     
     func showYTDViewController(viewController: UIViewController) {
@@ -45,4 +53,4 @@ extension YTDProtocol {
     }
 }
 
-var dragViewController: YTDViewController? = YTDViewController(nibName: "YTDViewController", bundle: nil)
+var dragViewController: YTDViewController?

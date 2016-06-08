@@ -42,11 +42,7 @@ extension YTDViewController {
     }
     
     func setPlayerURLs(URLs: [NSURL]) {
-        if (URLs.count > 1) {
-            self.playerView.urls = URLs
-        } else {
-            self.playerView.url = URLs[0]
-        }
+        playerView.urls = URLs
         startVideo()
     }
     
@@ -57,7 +53,7 @@ extension YTDViewController {
 
 extension YTDViewController: PlayerViewDelegate {
     
-    func playerVideo(player: PlayerView, statusPlayer: PlayerViewStatus, error: NSError?) {
+    func playerVideo(player: PlayerView, statusPlayer: PVStatus, error: NSError?) {
         
         switch statusPlayer {
         case AVPlayerStatus.Unknown:
@@ -72,6 +68,7 @@ extension YTDViewController: PlayerViewDelegate {
     }
     
     func readyToPlay() {
+        playerView.loopVideosQueue = true
         progressIndicatorView.stopAnimating()
         progressIndicatorView.hidden = true
         playerTapGesture = UITapGestureRecognizer(target: self, action: #selector(YTDViewController.showPlayerControls))
@@ -80,11 +77,17 @@ extension YTDViewController: PlayerViewDelegate {
         self.playerView.play()
     }
     
-    func playerVideo(player: PlayerView, statusItemPlayer: PlayerViewItemStatus, error: NSError?) {
+    func playerVideo(player: PlayerView, statusItemPlayer: PVItemStatus, error: NSError?) {
         
+        print("statusItemPlayer")
     }
     
-    func playerVideo(player: PlayerView, loadedTimeRanges: [PlayerviewTimeRange]) {
+    func playerVideo(player: PlayerView, loadedTimeRanges: [PVTimeRange]) {
+        print("loadedTimeRanges")
+        if (progressIndicatorView.hidden == false) {
+            progressIndicatorView.stopAnimating()
+            progressIndicatorView.hidden = true
+        }
         
         if let first = loadedTimeRanges.first {
             let bufferedSeconds = Float(CMTimeGetSeconds(first.start) + CMTimeGetSeconds(first.duration))
@@ -93,13 +96,13 @@ extension YTDViewController: PlayerViewDelegate {
     }
     
     func playerVideo(player: PlayerView, duration: Double) {
-        
-        self.entireTime.text = timeFormatted(Int(duration))
+        print("duration")
+        let duration = Int(duration)
+        self.entireTime.text = timeFormatted(duration)
         slider.maximumValue = Float(duration)
     }
     
     func playerVideo(player: PlayerView, currentTime: Double) {
-        
         let curTime = Int(currentTime)
         self.currentTime.text = timeFormatted(curTime)
         if (!dragginSlider && (Int(slider.value) != curTime)) { // Change every second
@@ -108,7 +111,7 @@ extension YTDViewController: PlayerViewDelegate {
     }
     
     func playerVideo(player: PlayerView, rate: Float) {
-        
+        print("rate")
         print(rate)
         if (rate == 1.0) {
             isPlaying = true
@@ -123,6 +126,11 @@ extension YTDViewController: PlayerViewDelegate {
     
     func playerVideo(playerFinished player: PlayerView) {
         print("Video has finished")
+        playerView.next()
+        playerView.play()
+        progressIndicatorView.hidden = false
+        progressIndicatorView.startAnimating()
+        
     }
     
     func timeFormatted(totalSeconds: Int) -> String {

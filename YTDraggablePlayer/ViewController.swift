@@ -11,6 +11,15 @@ import UIKit
 
 class ViewController: UIViewController, YTDProtocol {
 
+    let videos = [Video.init(name: "Big Bunny", artist: "Google", url: NSURL(string: "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4")!),
+                 Video.init(name: "Robo Toy", artist: "Google", url: NSURL(string: "http://techslides.com/demos/sample-videos/small.mp4")!),
+                 Video.init(name: "Big Bunny", artist: "Google", url: NSURL(string: "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4")!),
+                 Video.init(name: "Robo Toy", artist: "Google", url: NSURL(string: "http://techslides.com/demos/sample-videos/small.mp4")!),
+                 Video.init(name: "Big Bunny", artist: "Google", url: NSURL(string: "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4")!),
+                 Video.init(name: "Robo Toy", artist: "Google", url: NSURL(string: "http://techslides.com/demos/sample-videos/small.mp4")!),
+                 Video.init(name: "Big Bunny", artist: "Google", url: NSURL(string: "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4")!),
+                 Video.init(name: "Robo Toy", artist: "Google", url: NSURL(string: "http://techslides.com/demos/sample-videos/small.mp4")!)]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,7 +50,8 @@ class ViewController: UIViewController, YTDProtocol {
     
 
     @IBAction func touch(sender: AnyObject) {
-        initYTD([NSURL(string: "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4")!, NSURL(string:"http://api.mymixtapez.vuziqsrv.com/Album/Sv?idvideo=1012")!])
+        let urls = [videos[0].url, videos[1].url]
+        initYTD(urls, tableCellNibName: "VideoCell", delegate: self, dataSource: self)
         showYTDViewController(self)
     }
     
@@ -49,4 +59,32 @@ class ViewController: UIViewController, YTDProtocol {
         print("uns")
     }
 
+}
+
+extension ViewController: UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return videos.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCellWithIdentifier("VideoCell", forIndexPath: indexPath) as! VideoCell
+        return cell
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 74
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = cell as! VideoCell
+        cell.labelArtist.text = videos[indexPath.row].artist
+        cell.labelTitle.text = videos[indexPath.row].name
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        changeURL(videos[indexPath.row].url)
+    }
 }

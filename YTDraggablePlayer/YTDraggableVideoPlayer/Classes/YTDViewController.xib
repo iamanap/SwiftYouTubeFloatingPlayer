@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YTDViewController" customModule="YTDraggablePlayer" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YTDViewController" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
             <connections>
                 <outlet property="backPlayerControlsView" destination="b1H-qK-LSs" id="Bay-TI-Dg9"/>
                 <outlet property="currentTime" destination="xST-Jd-HNU" id="CiS-tO-YE0"/>
@@ -51,7 +51,7 @@
                         </mask>
                     </variation>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GX1-CJ-qY0" customClass="PlayerView" customModule="YTDraggablePlayer" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GX1-CJ-qY0" customClass="PlayerView" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                     <subviews>
                         <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1H-qK-LSs" userLabel="Back Footer View">
@@ -104,12 +104,12 @@
                                         <action selector="fullScreenTouched:" destination="-1" eventType="touchUpInside" id="n7v-YJ-omz"/>
                                     </connections>
                                 </button>
-                                <progressView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-aK-mJg" customClass="CustomProgress" customModule="YTDraggablePlayer" customModuleProvider="target">
+                                <progressView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-aK-mJg" customClass="CustomProgress" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
                                     <rect key="frame" x="76" y="21" width="168" height="2"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </progressView>
-                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="gMF-3a-S9d" customClass="CustomSlider" customModule="YTDraggablePlayer" customModuleProvider="target">
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="gMF-3a-S9d" customClass="CustomSlider" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
                                     <rect key="frame" x="74" y="6" width="172" height="31"/>
                                     <color key="tintColor" red="0.85416666666666663" green="0.0083327276709560909" blue="0.01632961403612402" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
@@ -138,7 +138,7 @@
                                 <constraint firstItem="0l8-MD-rzm" firstAttribute="leading" secondItem="gMF-3a-S9d" secondAttribute="trailing" constant="5" id="zrU-BL-UvF"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-GH-Get" customClass="YTDPopupCloseButton" customModule="YTDraggablePlayer" customModuleProvider="target">
+                        <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-GH-Get" customClass="YTDPopupCloseButton" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
                             <rect key="frame" x="12" y="18" width="24" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="24" id="g66-CS-nhb"/>

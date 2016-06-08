@@ -23,12 +23,24 @@ class YTDViewController: UIViewController {
     @IBOutlet weak var entireTime: UILabel!
     @IBOutlet weak var currentTime: UILabel!
     @IBOutlet weak var progressIndicatorView: UIActivityIndicatorView!
+    var delegate: UITableViewDelegate?
+    var dataSource: UITableViewDataSource?
+    var tableCellNibName: String?
+    
     var isPlaying: Bool = false
     var isFullscreen: Bool = false
     var dragginSlider: Bool = false
     var isMinimized: Bool = false
     var hideTimer: NSTimer?
-    var urls: [NSURL]?
+    var urls: [NSURL]? {
+        didSet {
+            if (playerView != nil) {
+                setPlayerURLs(urls!)
+                progressIndicatorView.hidden = false
+                progressIndicatorView.startAnimating()
+            }
+        }
+    }
     
     var playerControlsFrame: CGRect?
     var playerViewFrame: CGRect?
@@ -67,10 +79,6 @@ class YTDViewController: UIViewController {
         calculateFrames()
     }
     
-    func setURLs(urls: [NSURL]) {
-        self.urls = urls
-    }
-    
     func initPlayerWithURLs() {
         if (isMinimized) {
             expandViews()
@@ -79,12 +87,16 @@ class YTDViewController: UIViewController {
     }
     
     func initViews() {
-        playerControlsView.alpha = 0.0
-        backPlayerControlsView.alpha = 0.0
         self.view.backgroundColor = UIColor.clearColor()
         self.view.alpha = 0.0
+        playerControlsView.alpha = 0.0
+        backPlayerControlsView.alpha = 0.0
         let gesture = UIPanGestureRecognizer.init(target: self, action: #selector(YTDViewController.panAction(_:)))
         playerView.addGestureRecognizer(gesture)
+        
+        tableView.delegate = delegate
+        tableView.dataSource = dataSource
+        tableView.registerNib(UINib(nibName: tableCellNibName!, bundle: nil), forCellReuseIdentifier: tableCellNibName!)
     }
     
     func calculateFrames() {
