@@ -38,6 +38,7 @@ class YTFViewController: UIViewController {
                 // Finish playing all items
                 if (currentUrlIndex >= urls?.count) {
                     // Go back to first tableView item to loop list
+                    currentUrlIndex = 0
                     selectFirstRowOfTable()
                 } else {
                     playIndex(currentUrlIndex)
@@ -49,8 +50,6 @@ class YTFViewController: UIViewController {
         didSet {
             if (playerView != nil) {
                 currentUrlIndex = 0
-                progressIndicatorView.hidden = false
-                progressIndicatorView.startAnimating()
             }
         }
     }
@@ -144,8 +143,6 @@ class YTFViewController: UIViewController {
     
     func selectFirstRowOfTable() {
         let rowToSelect:NSIndexPath = NSIndexPath(forRow: 0, inSection: 0)
-        tableView.selectRowAtIndexPath(rowToSelect, animated: true, scrollPosition: UITableViewScrollPosition.None)
-        tableView.delegate?.tableView!(tableView, didSelectRowAtIndexPath: rowToSelect)
         
         UIView.animateWithDuration(0.5, animations: {
             self.tableView.scrollToRowAtIndexPath(rowToSelect, atScrollPosition: .Top, animated: false)
