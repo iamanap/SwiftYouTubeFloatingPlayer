@@ -17,33 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMX-32-uG4">
-                                <rect key="frame" x="177" y="285" width="46" height="30"/>
-                                <state key="normal" title="Show">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0E-DX-24O">
+                                <rect key="frame" x="97" y="269" width="207" height="62"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
+                                <state key="normal" title="Show Player">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRM-m4-LEW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UL7-w9-dEe">
-                                <rect key="frame" x="48" y="368" width="46" height="30"/>
-                                <state key="normal" title="asdf"/>
-                                <connections>
-                                    <action selector="asdf" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yof-Qe-XYz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ag-rY-pQg">
-                                <rect key="frame" x="184" y="131" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="gVO-eX-VbS" kind="show" id="0Ob-He-9rp"/>
+                                    <action selector="showPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8H5-Rs-J6j"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.66666666666666663" green="0.49532818527614975" blue="0.19746823491548873" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.33923088393506617" green="0.56853510943489938" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I0E-DX-24O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="76m-ly-1Vw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I0E-DX-24O" secondAttribute="bottom" constant="14" id="9Cp-ll-n0V"/>
+                            <constraint firstItem="I0E-DX-24O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nxo-hx-xg4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9Cp-ll-n0V"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="XWT-RV-hj5"/>
+                    <navigationItem key="navigationItem" id="XWT-RV-hj5">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="4lB-cJ-CQb">
+                            <connections>
+                                <segue destination="gVO-eX-VbS" kind="show" id="Knl-Nj-Sos"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="600"/>
                 </viewController>
@@ -51,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="978" y="405"/>
         </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="vU6-mH-pfd">
             <objects>
-                <viewController id="gVO-eX-VbS" sceneMemberID="viewController">
+                <viewController id="gVO-eX-VbS" customClass="NextViewController" customModule="YouTubeFloatingPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KRn-CE-VLN"/>
                         <viewControllerLayoutGuide type="bottom" id="WLV-kV-uyf"/>
@@ -62,7 +65,23 @@
                     <view key="view" contentMode="scaleToFill" id="giK-LY-cpz">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXu-ae-SEF">
+                                <rect key="frame" x="75" y="269" width="251" height="62"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
+                                <state key="normal" title="Remove Player">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removePlayer:" destination="gVO-eX-VbS" eventType="touchUpInside" id="aAO-bb-XN6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.38867510900000002" blue="0.52314536160000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oXu-ae-SEF" firstAttribute="centerX" secondItem="giK-LY-cpz" secondAttribute="centerX" id="EFu-lA-PsY"/>
+                            <constraint firstItem="oXu-ae-SEF" firstAttribute="centerY" secondItem="giK-LY-cpz" secondAttribute="centerY" id="yhM-SY-PCC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZc-xW-e6n" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,14 +8,14 @@
 
 import UIKit
 
-class YTDViewController: UIViewController {
+class YTFViewController: UIViewController {
     
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var fullscreen: UIButton!
     @IBOutlet weak var playerView: PlayerView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableViewContainer: UIView!
-    @IBOutlet weak var minimizeButton: YTDPopupCloseButton!
+    @IBOutlet weak var minimizeButton: YTFPopupCloseButton!
     @IBOutlet weak var playerControlsView: UIView!
     @IBOutlet weak var backPlayerControlsView: UIView!
     @IBOutlet weak var slider: CustomSlider!
@@ -32,10 +32,23 @@ class YTDViewController: UIViewController {
     var dragginSlider: Bool = false
     var isMinimized: Bool = false
     var hideTimer: NSTimer?
+    var currentUrlIndex: Int = 0 {
+        didSet {
+            if (playerView != nil) {
+                // Finish playing all items
+                if (currentUrlIndex >= urls?.count) {
+                    // Go back to first tableView item to loop list
+                    selectFirstRowOfTable()
+                } else {
+                    playIndex(currentUrlIndex)
+                }
+            }
+        }
+    }
     var urls: [NSURL]? {
         didSet {
             if (playerView != nil) {
-                setPlayerURLs(urls!)
+                currentUrlIndex = 0
                 progressIndicatorView.hidden = false
                 progressIndicatorView.startAnimating()
             }
@@ -83,7 +96,7 @@ class YTDViewController: UIViewController {
         if (isMinimized) {
             expandViews()
         }
-        setPlayerURLs(urls!)
+        playIndex(currentUrlIndex)
     }
     
     func initViews() {
@@ -91,11 +104,12 @@ class YTDViewController: UIViewController {
         self.view.alpha = 0.0
         playerControlsView.alpha = 0.0
         backPlayerControlsView.alpha = 0.0
-        let gesture = UIPanGestureRecognizer.init(target: self, action: #selector(YTDViewController.panAction(_:)))
+        let gesture = UIPanGestureRecognizer.init(target: self, action: #selector(YTFViewController.panAction(_:)))
         playerView.addGestureRecognizer(gesture)
         
         tableView.delegate = delegate
         tableView.dataSource = dataSource
+        tableView.rowHeight = CGFloat(76)
         tableView.registerNib(UINib(nibName: tableCellNibName!, bundle: nil), forCellReuseIdentifier: tableCellNibName!)
     }
     
@@ -126,6 +140,16 @@ class YTDViewController: UIViewController {
     
     @IBAction func minimizeButtonTouched(sender: AnyObject) {
         minimizeViews()
+    }
+    
+    func selectFirstRowOfTable() {
+        let rowToSelect:NSIndexPath = NSIndexPath(forRow: 0, inSection: 0)
+        tableView.selectRowAtIndexPath(rowToSelect, animated: true, scrollPosition: UITableViewScrollPosition.None)
+        tableView.delegate?.tableView!(tableView, didSelectRowAtIndexPath: rowToSelect)
+        
+        UIView.animateWithDuration(0.5, animations: {
+            self.tableView.scrollToRowAtIndexPath(rowToSelect, atScrollPosition: .Top, animated: false)
+        })
     }
     
 }

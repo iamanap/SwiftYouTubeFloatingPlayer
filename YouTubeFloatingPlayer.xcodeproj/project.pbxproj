@@ -7,35 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC13AF6A1CF62B950047E6AF /* CustomProgressSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13AF691CF62B950047E6AF /* CustomProgressSlider.swift */; };
-		CC142D7C1CF77701009D056F /* NowPlayingCollapseChevronMask.png in Resources */ = {isa = PBXBuildFile; fileRef = CC142D791CF77701009D056F /* NowPlayingCollapseChevronMask.png */; };
-		CC142D7D1CF77701009D056F /* NowPlayingCollapseChevronMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC142D7A1CF77701009D056F /* NowPlayingCollapseChevronMask@2x.png */; };
-		CC142D7E1CF77701009D056F /* NowPlayingCollapseChevronMask@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC142D7B1CF77701009D056F /* NowPlayingCollapseChevronMask@3x.png */; };
-		CC142D801CF77C3C009D056F /* YTDPopupCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC142D7F1CF77C3C009D056F /* YTDPopupCloseButton.swift */; };
-		CC32619A1D05AAF1005C0441 /* YTDAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3261991D05AAF1005C0441 /* YTDAnimation.swift */; };
-		CC32619D1D05BA20005C0441 /* YTDProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32619C1D05BA20005C0441 /* YTDProtocol.swift */; };
-		CC4247901CEE3E1C009D960F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC42478F1CEE3E1C009D960F /* AppDelegate.swift */; };
-		CC4247921CEE3E1C009D960F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4247911CEE3E1C009D960F /* ViewController.swift */; };
-		CC4247951CEE3E1C009D960F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4247931CEE3E1C009D960F /* Main.storyboard */; };
-		CC4247971CEE3E1C009D960F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4247961CEE3E1C009D960F /* Assets.xcassets */; };
-		CC42479A1CEE3E1C009D960F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4247981CEE3E1C009D960F /* LaunchScreen.storyboard */; };
-		CC4247A51CEE3E1C009D960F /* YTDraggablePlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4247A41CEE3E1C009D960F /* YTDraggablePlayerTests.swift */; };
-		CC4247B01CEE3E1C009D960F /* YTDraggablePlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4247AF1CEE3E1C009D960F /* YTDraggablePlayerUITests.swift */; };
-		CC4248161CEE472C009D960F /* fullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CC42480A1CEE472C009D960F /* fullscreen.png */; };
-		CC4248171CEE472C009D960F /* fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC42480B1CEE472C009D960F /* fullscreen@2x.png */; };
-		CC4248181CEE472C009D960F /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = CC42480C1CEE472C009D960F /* pause.png */; };
-		CC4248191CEE472C009D960F /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC42480D1CEE472C009D960F /* pause@2x.png */; };
-		CC42481A1CEE472C009D960F /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CC42480E1CEE472C009D960F /* play.png */; };
-		CC42481B1CEE472C009D960F /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC42480F1CEE472C009D960F /* play@2x.png */; };
-		CC42481C1CEE472C009D960F /* unfullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4248101CEE472C009D960F /* unfullscreen.png */; };
-		CC42481D1CEE472C009D960F /* unfullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4248111CEE472C009D960F /* unfullscreen@2x.png */; };
-		CC4248221CEE4D48009D960F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4248211CEE4D48009D960F /* PlayerView.swift */; };
-		CC8BE5AE1D085D2500771566 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8BE5AD1D085D2500771566 /* VideoCell.swift */; };
-		CC8BE5B31D085F8B00771566 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8BE5B21D085F8B00771566 /* Video.swift */; };
-		CC8BE5B71D08736D00771566 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC8BE5B61D08736D00771566 /* VideoCell.xib */; };
-		CCCDE7EA1CF332B9008B9BD4 /* YTDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCDE7E81CF332B9008B9BD4 /* YTDViewController.swift */; };
-		CCCDE7EB1CF332B9008B9BD4 /* YTDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCDE7E91CF332B9008B9BD4 /* YTDViewController.xib */; };
-		CCF6A56A1CFE2171002CFFFD /* YTDPlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6A5691CFE2171002CFFFD /* YTDPlayerControls.swift */; };
+		CC17BC651D0A0FA0009FCD9C /* CustomProgressSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC5B1D0A0F9F009FCD9C /* CustomProgressSlider.swift */; };
+		CC17BC661D0A0FA0009FCD9C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC5C1D0A0F9F009FCD9C /* PlayerView.swift */; };
+		CC17BC671D0A0FA0009FCD9C /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC5D1D0A0F9F009FCD9C /* VideoCell.swift */; };
+		CC17BC681D0A0FA0009FCD9C /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC5E1D0A0F9F009FCD9C /* VideoCell.xib */; };
+		CC17BC691D0A0FA0009FCD9C /* YTFAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC5F1D0A0F9F009FCD9C /* YTFAnimation.swift */; };
+		CC17BC6A1D0A0FA0009FCD9C /* YTFPlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC601D0A0F9F009FCD9C /* YTFPlayerControls.swift */; };
+		CC17BC6B1D0A0FA0009FCD9C /* YTFPopupCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC611D0A0F9F009FCD9C /* YTFPopupCloseButton.swift */; };
+		CC17BC6C1D0A0FA0009FCD9C /* YTFProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC621D0A0F9F009FCD9C /* YTFProtocol.swift */; };
+		CC17BC6D1D0A0FA0009FCD9C /* YTFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC631D0A0F9F009FCD9C /* YTFViewController.swift */; };
+		CC17BC6E1D0A0FA0009FCD9C /* YTFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC641D0A0F9F009FCD9C /* YTFViewController.xib */; };
+		CC17BC751D0A0FF9009FCD9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC6F1D0A0FF9009FCD9C /* AppDelegate.swift */; };
+		CC17BC761D0A0FF9009FCD9C /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC701D0A0FF9009FCD9C /* NextViewController.swift */; };
+		CC17BC771D0A0FF9009FCD9C /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC711D0A0FF9009FCD9C /* Video.swift */; };
+		CC17BC7A1D0A0FF9009FCD9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC741D0A0FF9009FCD9C /* ViewController.swift */; };
+		CC17BC7D1D0A1005009FCD9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC7B1D0A1005009FCD9C /* Main.storyboard */; };
+		CC17BC801D0A1013009FCD9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC7E1D0A1013009FCD9C /* LaunchScreen.storyboard */; };
+		CC17BC821D0A1021009FCD9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC811D0A1021009FCD9C /* Assets.xcassets */; };
+		CC17BC901D0A1054009FCD9C /* fullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC851D0A1054009FCD9C /* fullscreen.png */; };
+		CC17BC911D0A1054009FCD9C /* fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC861D0A1054009FCD9C /* fullscreen@2x.png */; };
+		CC17BC921D0A1054009FCD9C /* NowPlayingCollapseChevronMask.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC871D0A1054009FCD9C /* NowPlayingCollapseChevronMask.png */; };
+		CC17BC931D0A1054009FCD9C /* NowPlayingCollapseChevronMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC881D0A1054009FCD9C /* NowPlayingCollapseChevronMask@2x.png */; };
+		CC17BC941D0A1054009FCD9C /* NowPlayingCollapseChevronMask@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC891D0A1054009FCD9C /* NowPlayingCollapseChevronMask@3x.png */; };
+		CC17BC951D0A1054009FCD9C /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8A1D0A1054009FCD9C /* pause.png */; };
+		CC17BC961D0A1054009FCD9C /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8B1D0A1054009FCD9C /* pause@2x.png */; };
+		CC17BC971D0A1054009FCD9C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8C1D0A1054009FCD9C /* play.png */; };
+		CC17BC981D0A1054009FCD9C /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8D1D0A1054009FCD9C /* play@2x.png */; };
+		CC17BC991D0A1054009FCD9C /* unfullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8E1D0A1054009FCD9C /* unfullscreen.png */; };
+		CC17BC9A1D0A1054009FCD9C /* unfullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8F1D0A1054009FCD9C /* unfullscreen@2x.png */; };
+		CCE58F751D0AF3930048E169 /* YTDraggablePlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F741D0AF3930048E169 /* YTDraggablePlayerTests.swift */; };
+		CCE58F771D0AF3B60048E169 /* YTDraggablePlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F761D0AF3B60048E169 /* YTDraggablePlayerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,41 +57,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC13AF691CF62B950047E6AF /* CustomProgressSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomProgressSlider.swift; sourceTree = "<group>"; };
-		CC142D791CF77701009D056F /* NowPlayingCollapseChevronMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NowPlayingCollapseChevronMask.png; sourceTree = "<group>"; };
-		CC142D7A1CF77701009D056F /* NowPlayingCollapseChevronMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NowPlayingCollapseChevronMask@2x.png"; sourceTree = "<group>"; };
-		CC142D7B1CF77701009D056F /* NowPlayingCollapseChevronMask@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NowPlayingCollapseChevronMask@3x.png"; sourceTree = "<group>"; };
-		CC142D7F1CF77C3C009D056F /* YTDPopupCloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTDPopupCloseButton.swift; sourceTree = "<group>"; };
-		CC3261991D05AAF1005C0441 /* YTDAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTDAnimation.swift; sourceTree = "<group>"; };
-		CC32619C1D05BA20005C0441 /* YTDProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTDProtocol.swift; sourceTree = "<group>"; };
+		CC17BC5B1D0A0F9F009FCD9C /* CustomProgressSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomProgressSlider.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/CustomProgressSlider.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC5C1D0A0F9F009FCD9C /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerView.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/PlayerView.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC5D1D0A0F9F009FCD9C /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCell.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/VideoCell.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC5E1D0A0F9F009FCD9C /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoCell.xib; path = YTFloatingPlayer/YTFloatingPlayer/Classes/VideoCell.xib; sourceTree = SOURCE_ROOT; };
+		CC17BC5F1D0A0F9F009FCD9C /* YTFAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFAnimation.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFAnimation.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC601D0A0F9F009FCD9C /* YTFPlayerControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFPlayerControls.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFPlayerControls.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC611D0A0F9F009FCD9C /* YTFPopupCloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFPopupCloseButton.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFPopupCloseButton.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC621D0A0F9F009FCD9C /* YTFProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFProtocol.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFProtocol.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC631D0A0F9F009FCD9C /* YTFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFViewController.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFViewController.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC641D0A0F9F009FCD9C /* YTFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YTFViewController.xib; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFViewController.xib; sourceTree = SOURCE_ROOT; };
+		CC17BC6F1D0A0FF9009FCD9C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = YTFloatingPlayer/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC701D0A0FF9009FCD9C /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NextViewController.swift; path = YTFloatingPlayer/NextViewController.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC711D0A0FF9009FCD9C /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = YTFloatingPlayer/Video.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC741D0A0FF9009FCD9C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = YTFloatingPlayer/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		CC17BC7C1D0A1005009FCD9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YTFloatingPlayer/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		CC17BC7F1D0A1013009FCD9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YTFloatingPlayer/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		CC17BC811D0A1021009FCD9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = YTFloatingPlayer/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		CC17BC851D0A1054009FCD9C /* fullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fullscreen.png; path = YTFloatingPlayer/YTFloatingPlayer/Assets/fullscreen.png; sourceTree = SOURCE_ROOT; };
+		CC17BC861D0A1054009FCD9C /* fullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fullscreen@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/fullscreen@2x.png"; sourceTree = SOURCE_ROOT; };
+		CC17BC871D0A1054009FCD9C /* NowPlayingCollapseChevronMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NowPlayingCollapseChevronMask.png; path = YTFloatingPlayer/YTFloatingPlayer/Assets/NowPlayingCollapseChevronMask.png; sourceTree = SOURCE_ROOT; };
+		CC17BC881D0A1054009FCD9C /* NowPlayingCollapseChevronMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NowPlayingCollapseChevronMask@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/NowPlayingCollapseChevronMask@2x.png"; sourceTree = SOURCE_ROOT; };
+		CC17BC891D0A1054009FCD9C /* NowPlayingCollapseChevronMask@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NowPlayingCollapseChevronMask@3x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/NowPlayingCollapseChevronMask@3x.png"; sourceTree = SOURCE_ROOT; };
+		CC17BC8A1D0A1054009FCD9C /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = YTFloatingPlayer/YTFloatingPlayer/Assets/pause.png; sourceTree = SOURCE_ROOT; };
+		CC17BC8B1D0A1054009FCD9C /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pause@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/pause@2x.png"; sourceTree = SOURCE_ROOT; };
+		CC17BC8C1D0A1054009FCD9C /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = YTFloatingPlayer/YTFloatingPlayer/Assets/play.png; sourceTree = SOURCE_ROOT; };
+		CC17BC8D1D0A1054009FCD9C /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/play@2x.png"; sourceTree = SOURCE_ROOT; };
+		CC17BC8E1D0A1054009FCD9C /* unfullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unfullscreen.png; path = YTFloatingPlayer/YTFloatingPlayer/Assets/unfullscreen.png; sourceTree = SOURCE_ROOT; };
+		CC17BC8F1D0A1054009FCD9C /* unfullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unfullscreen@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/unfullscreen@2x.png"; sourceTree = SOURCE_ROOT; };
+		CC17BCA51D0A138F009FCD9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = YTFloatingPlayer/Info.plist; sourceTree = SOURCE_ROOT; };
+		CC17BCA71D0A13A0009FCD9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = YTFloatingPlayerTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		CC17BCA91D0A13A9009FCD9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = YTFloatingPlayerUITests/Info.plist; sourceTree = SOURCE_ROOT; };
 		CC42478C1CEE3E1C009D960F /* YouTubeFloatingPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeFloatingPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC42478F1CEE3E1C009D960F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC4247911CEE3E1C009D960F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CC4247941CEE3E1C009D960F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC4247961CEE3E1C009D960F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CC4247991CEE3E1C009D960F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CC42479B1CEE3E1C009D960F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC4247A01CEE3E1C009D960F /* YouTubeFloatingPlayer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeFloatingPlayer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC4247A41CEE3E1C009D960F /* YTDraggablePlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTDraggablePlayerTests.swift; sourceTree = "<group>"; };
-		CC4247A61CEE3E1C009D960F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC4247AB1CEE3E1C009D960F /* YouTubeFloatingPlayer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeFloatingPlayer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC4247AF1CEE3E1C009D960F /* YTDraggablePlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTDraggablePlayerUITests.swift; sourceTree = "<group>"; };
-		CC4247B11CEE3E1C009D960F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC42480A1CEE472C009D960F /* fullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fullscreen.png; sourceTree = "<group>"; };
-		CC42480B1CEE472C009D960F /* fullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullscreen@2x.png"; sourceTree = "<group>"; };
-		CC42480C1CEE472C009D960F /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
-		CC42480D1CEE472C009D960F /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@2x.png"; sourceTree = "<group>"; };
-		CC42480E1CEE472C009D960F /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		CC42480F1CEE472C009D960F /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
-		CC4248101CEE472C009D960F /* unfullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unfullscreen.png; sourceTree = "<group>"; };
-		CC4248111CEE472C009D960F /* unfullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unfullscreen@2x.png"; sourceTree = "<group>"; };
-		CC4248211CEE4D48009D960F /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		CC8BE5AD1D085D2500771566 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
-		CC8BE5B21D085F8B00771566 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		CC8BE5B61D08736D00771566 /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
-		CCCDE7E81CF332B9008B9BD4 /* YTDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTDViewController.swift; sourceTree = "<group>"; };
-		CCCDE7E91CF332B9008B9BD4 /* YTDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTDViewController.xib; sourceTree = "<group>"; };
-		CCF6A5691CFE2171002CFFFD /* YTDPlayerControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTDPlayerControls.swift; sourceTree = "<group>"; };
+		CCE58F741D0AF3930048E169 /* YTDraggablePlayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTDraggablePlayerTests.swift; path = YTFloatingPlayerTests/YTDraggablePlayerTests.swift; sourceTree = SOURCE_ROOT; };
+		CCE58F761D0AF3B60048E169 /* YTDraggablePlayerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTDraggablePlayerUITests.swift; path = YTFloatingPlayerUITests/YTDraggablePlayerUITests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +123,9 @@
 		CC4247831CEE3E1C009D960F = {
 			isa = PBXGroup;
 			children = (
-				CC42478E1CEE3E1C009D960F /* YTDraggablePlayer */,
-				CC4247A31CEE3E1C009D960F /* YTDraggablePlayerTests */,
-				CC4247AE1CEE3E1C009D960F /* YTDraggablePlayerUITests */,
+				CC42478E1CEE3E1C009D960F /* YTFPlayer */,
+				CC4247A31CEE3E1C009D960F /* YTFloatingPlayerTests */,
+				CC4247AE1CEE3E1C009D960F /* YTFloatingPlayerUITests */,
 				CC42478D1CEE3E1C009D960F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,81 +140,88 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CC42478E1CEE3E1C009D960F /* YTDraggablePlayer */ = {
+		CC42478E1CEE3E1C009D960F /* YTFPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				CC4248081CEE472C009D960F /* YTDraggableVideoPlayer */,
-				CC42478F1CEE3E1C009D960F /* AppDelegate.swift */,
-				CC4247911CEE3E1C009D960F /* ViewController.swift */,
-				CC4247931CEE3E1C009D960F /* Main.storyboard */,
-				CC8BE5B61D08736D00771566 /* VideoCell.xib */,
-				CC8BE5B21D085F8B00771566 /* Video.swift */,
-				CC8BE5AD1D085D2500771566 /* VideoCell.swift */,
-				CC4247961CEE3E1C009D960F /* Assets.xcassets */,
-				CC4247981CEE3E1C009D960F /* LaunchScreen.storyboard */,
-				CC42479B1CEE3E1C009D960F /* Info.plist */,
+				CC4248081CEE472C009D960F /* YTFPlayer */,
+				CC17BC6F1D0A0FF9009FCD9C /* AppDelegate.swift */,
+				CC17BC701D0A0FF9009FCD9C /* NextViewController.swift */,
+				CC17BC711D0A0FF9009FCD9C /* Video.swift */,
+				CC17BC741D0A0FF9009FCD9C /* ViewController.swift */,
+				CC17BC7B1D0A1005009FCD9C /* Main.storyboard */,
+				CC17BC811D0A1021009FCD9C /* Assets.xcassets */,
+				CC17BC7E1D0A1013009FCD9C /* LaunchScreen.storyboard */,
+				CC17BCA51D0A138F009FCD9C /* Info.plist */,
 			);
+			name = YTFPlayer;
 			path = YTDraggablePlayer;
 			sourceTree = "<group>";
 		};
-		CC4247A31CEE3E1C009D960F /* YTDraggablePlayerTests */ = {
+		CC4247A31CEE3E1C009D960F /* YTFloatingPlayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				CC4247A41CEE3E1C009D960F /* YTDraggablePlayerTests.swift */,
-				CC4247A61CEE3E1C009D960F /* Info.plist */,
+				CC17BCA71D0A13A0009FCD9C /* Info.plist */,
+				CCE58F741D0AF3930048E169 /* YTDraggablePlayerTests.swift */,
 			);
+			name = YTFloatingPlayerTests;
 			path = YTDraggablePlayerTests;
 			sourceTree = "<group>";
 		};
-		CC4247AE1CEE3E1C009D960F /* YTDraggablePlayerUITests */ = {
+		CC4247AE1CEE3E1C009D960F /* YTFloatingPlayerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CC4247AF1CEE3E1C009D960F /* YTDraggablePlayerUITests.swift */,
-				CC4247B11CEE3E1C009D960F /* Info.plist */,
+				CC17BCA91D0A13A9009FCD9C /* Info.plist */,
+				CCE58F761D0AF3B60048E169 /* YTDraggablePlayerUITests.swift */,
 			);
+			name = YTFloatingPlayerUITests;
 			path = YTDraggablePlayerUITests;
 			sourceTree = "<group>";
 		};
-		CC4248081CEE472C009D960F /* YTDraggableVideoPlayer */ = {
+		CC4248081CEE472C009D960F /* YTFPlayer */ = {
 			isa = PBXGroup;
 			children = (
 				CC4248091CEE472C009D960F /* Assets */,
 				CC4248121CEE472C009D960F /* Classes */,
 			);
+			name = YTFPlayer;
 			path = YTDraggableVideoPlayer;
 			sourceTree = "<group>";
 		};
 		CC4248091CEE472C009D960F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				CC42480A1CEE472C009D960F /* fullscreen.png */,
-				CC42480B1CEE472C009D960F /* fullscreen@2x.png */,
-				CC42480C1CEE472C009D960F /* pause.png */,
-				CC42480D1CEE472C009D960F /* pause@2x.png */,
-				CC42480E1CEE472C009D960F /* play.png */,
-				CC42480F1CEE472C009D960F /* play@2x.png */,
-				CC4248101CEE472C009D960F /* unfullscreen.png */,
-				CC4248111CEE472C009D960F /* unfullscreen@2x.png */,
-				CC142D791CF77701009D056F /* NowPlayingCollapseChevronMask.png */,
-				CC142D7A1CF77701009D056F /* NowPlayingCollapseChevronMask@2x.png */,
-				CC142D7B1CF77701009D056F /* NowPlayingCollapseChevronMask@3x.png */,
+				CC17BC851D0A1054009FCD9C /* fullscreen.png */,
+				CC17BC861D0A1054009FCD9C /* fullscreen@2x.png */,
+				CC17BC871D0A1054009FCD9C /* NowPlayingCollapseChevronMask.png */,
+				CC17BC881D0A1054009FCD9C /* NowPlayingCollapseChevronMask@2x.png */,
+				CC17BC891D0A1054009FCD9C /* NowPlayingCollapseChevronMask@3x.png */,
+				CC17BC8A1D0A1054009FCD9C /* pause.png */,
+				CC17BC8B1D0A1054009FCD9C /* pause@2x.png */,
+				CC17BC8C1D0A1054009FCD9C /* play.png */,
+				CC17BC8D1D0A1054009FCD9C /* play@2x.png */,
+				CC17BC8E1D0A1054009FCD9C /* unfullscreen.png */,
+				CC17BC8F1D0A1054009FCD9C /* unfullscreen@2x.png */,
 			);
-			path = Assets;
+			name = Assets;
+			path = YTFloatingPlayer/YTFloatingPlayer/Assets;
 			sourceTree = "<group>";
 		};
 		CC4248121CEE472C009D960F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CC32619C1D05BA20005C0441 /* YTDProtocol.swift */,
-				CC4248211CEE4D48009D960F /* PlayerView.swift */,
-				CCCDE7E81CF332B9008B9BD4 /* YTDViewController.swift */,
-				CCF6A5691CFE2171002CFFFD /* YTDPlayerControls.swift */,
-				CC3261991D05AAF1005C0441 /* YTDAnimation.swift */,
-				CCCDE7E91CF332B9008B9BD4 /* YTDViewController.xib */,
-				CC13AF691CF62B950047E6AF /* CustomProgressSlider.swift */,
-				CC142D7F1CF77C3C009D056F /* YTDPopupCloseButton.swift */,
+				CC17BC5B1D0A0F9F009FCD9C /* CustomProgressSlider.swift */,
+				CC17BC5C1D0A0F9F009FCD9C /* PlayerView.swift */,
+				CC17BC5D1D0A0F9F009FCD9C /* VideoCell.swift */,
+				CC17BC5E1D0A0F9F009FCD9C /* VideoCell.xib */,
+				CC17BC5F1D0A0F9F009FCD9C /* YTFAnimation.swift */,
+				CC17BC601D0A0F9F009FCD9C /* YTFPlayerControls.swift */,
+				CC17BC611D0A0F9F009FCD9C /* YTFPopupCloseButton.swift */,
+				CC17BC621D0A0F9F009FCD9C /* YTFProtocol.swift */,
+				CC17BC631D0A0F9F009FCD9C /* YTFViewController.swift */,
+				CC17BC641D0A0F9F009FCD9C /* YTFViewController.xib */,
 			);
-			path = Classes;
+			name = Classes;
+			path = YTFloatingPlayer/YTFloatingPlayer/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +292,7 @@
 				TargetAttributes = {
 					CC42478B1CEE3E1C009D960F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = E9BBEYTP2D;
 					};
 					CC42479F1CEE3E1C009D960F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -319,22 +329,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4248161CEE472C009D960F /* fullscreen.png in Resources */,
-				CCCDE7EB1CF332B9008B9BD4 /* YTDViewController.xib in Resources */,
-				CC42481A1CEE472C009D960F /* play.png in Resources */,
-				CC42481B1CEE472C009D960F /* play@2x.png in Resources */,
-				CC142D7E1CF77701009D056F /* NowPlayingCollapseChevronMask@3x.png in Resources */,
-				CC8BE5B71D08736D00771566 /* VideoCell.xib in Resources */,
-				CC4248171CEE472C009D960F /* fullscreen@2x.png in Resources */,
-				CC4248181CEE472C009D960F /* pause.png in Resources */,
-				CC42481C1CEE472C009D960F /* unfullscreen.png in Resources */,
-				CC42479A1CEE3E1C009D960F /* LaunchScreen.storyboard in Resources */,
-				CC4247971CEE3E1C009D960F /* Assets.xcassets in Resources */,
-				CC142D7C1CF77701009D056F /* NowPlayingCollapseChevronMask.png in Resources */,
-				CC42481D1CEE472C009D960F /* unfullscreen@2x.png in Resources */,
-				CC4247951CEE3E1C009D960F /* Main.storyboard in Resources */,
-				CC4248191CEE472C009D960F /* pause@2x.png in Resources */,
-				CC142D7D1CF77701009D056F /* NowPlayingCollapseChevronMask@2x.png in Resources */,
+				CC17BC9A1D0A1054009FCD9C /* unfullscreen@2x.png in Resources */,
+				CC17BC681D0A0FA0009FCD9C /* VideoCell.xib in Resources */,
+				CC17BC951D0A1054009FCD9C /* pause.png in Resources */,
+				CC17BC821D0A1021009FCD9C /* Assets.xcassets in Resources */,
+				CC17BC7D1D0A1005009FCD9C /* Main.storyboard in Resources */,
+				CC17BC991D0A1054009FCD9C /* unfullscreen.png in Resources */,
+				CC17BC901D0A1054009FCD9C /* fullscreen.png in Resources */,
+				CC17BC801D0A1013009FCD9C /* LaunchScreen.storyboard in Resources */,
+				CC17BC931D0A1054009FCD9C /* NowPlayingCollapseChevronMask@2x.png in Resources */,
+				CC17BC6E1D0A0FA0009FCD9C /* YTFViewController.xib in Resources */,
+				CC17BC911D0A1054009FCD9C /* fullscreen@2x.png in Resources */,
+				CC17BC921D0A1054009FCD9C /* NowPlayingCollapseChevronMask.png in Resources */,
+				CC17BC971D0A1054009FCD9C /* play.png in Resources */,
+				CC17BC941D0A1054009FCD9C /* NowPlayingCollapseChevronMask@3x.png in Resources */,
+				CC17BC981D0A1054009FCD9C /* play@2x.png in Resources */,
+				CC17BC961D0A1054009FCD9C /* pause@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,17 +369,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCDE7EA1CF332B9008B9BD4 /* YTDViewController.swift in Sources */,
-				CC32619D1D05BA20005C0441 /* YTDProtocol.swift in Sources */,
-				CC142D801CF77C3C009D056F /* YTDPopupCloseButton.swift in Sources */,
-				CC13AF6A1CF62B950047E6AF /* CustomProgressSlider.swift in Sources */,
-				CC4247921CEE3E1C009D960F /* ViewController.swift in Sources */,
-				CC8BE5B31D085F8B00771566 /* Video.swift in Sources */,
-				CC8BE5AE1D085D2500771566 /* VideoCell.swift in Sources */,
-				CC4247901CEE3E1C009D960F /* AppDelegate.swift in Sources */,
-				CCF6A56A1CFE2171002CFFFD /* YTDPlayerControls.swift in Sources */,
-				CC32619A1D05AAF1005C0441 /* YTDAnimation.swift in Sources */,
-				CC4248221CEE4D48009D960F /* PlayerView.swift in Sources */,
+				CC17BC6C1D0A0FA0009FCD9C /* YTFProtocol.swift in Sources */,
+				CC17BC6A1D0A0FA0009FCD9C /* YTFPlayerControls.swift in Sources */,
+				CC17BC691D0A0FA0009FCD9C /* YTFAnimation.swift in Sources */,
+				CC17BC751D0A0FF9009FCD9C /* AppDelegate.swift in Sources */,
+				CC17BC651D0A0FA0009FCD9C /* CustomProgressSlider.swift in Sources */,
+				CC17BC761D0A0FF9009FCD9C /* NextViewController.swift in Sources */,
+				CC17BC6D1D0A0FA0009FCD9C /* YTFViewController.swift in Sources */,
+				CC17BC7A1D0A0FF9009FCD9C /* ViewController.swift in Sources */,
+				CC17BC771D0A0FF9009FCD9C /* Video.swift in Sources */,
+				CC17BC671D0A0FA0009FCD9C /* VideoCell.swift in Sources */,
+				CC17BC6B1D0A0FA0009FCD9C /* YTFPopupCloseButton.swift in Sources */,
+				CC17BC661D0A0FA0009FCD9C /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4247A51CEE3E1C009D960F /* YTDraggablePlayerTests.swift in Sources */,
+				CCE58F751D0AF3930048E169 /* YTDraggablePlayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4247B01CEE3E1C009D960F /* YTDraggablePlayerUITests.swift in Sources */,
+				CCE58F771D0AF3B60048E169 /* YTDraggablePlayerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,18 +416,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CC4247931CEE3E1C009D960F /* Main.storyboard */ = {
+		CC17BC7B1D0A1005009FCD9C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CC4247941CEE3E1C009D960F /* Base */,
+				CC17BC7C1D0A1005009FCD9C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CC4247981CEE3E1C009D960F /* LaunchScreen.storyboard */ = {
+		CC17BC7E1D0A1013009FCD9C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CC4247991CEE3E1C009D960F /* Base */,
+				CC17BC7F1D0A1013009FCD9C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -513,9 +524,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = YTDraggablePlayer/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/YTFloatingPlayer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = anappaula.YTDraggablePlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = anappaula.YTFloatingPlayer;
 				PRODUCT_NAME = YouTubeFloatingPlayer;
 			};
 			name = Debug;
@@ -524,9 +536,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = YTDraggablePlayer/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/YTFloatingPlayer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = anappaula.YTDraggablePlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = anappaula.YTFloatingPlayer;
 				PRODUCT_NAME = YouTubeFloatingPlayer;
 			};
 			name = Release;
@@ -535,10 +548,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YTDraggablePlayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anappaula.YTDraggablePlayerTests;
 				PRODUCT_NAME = YouTubeFloatingPlayer;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTubeFloatingPlayer.app/YouTubeFloatingPlayer";
 			};
 			name = Debug;
@@ -547,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YTDraggablePlayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anappaula.YTDraggablePlayerTests;
@@ -558,10 +574,12 @@
 		CC4247BB1CEE3E1C009D960F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YTDraggablePlayerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anappaula.YTDraggablePlayerUITests;
 				PRODUCT_NAME = YouTubeFloatingPlayer;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = YTDraggablePlayer;
 			};
 			name = Debug;
@@ -569,6 +587,7 @@
 		CC4247BC1CEE3E1C009D960F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YTDraggablePlayerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anappaula.YTDraggablePlayerUITests;

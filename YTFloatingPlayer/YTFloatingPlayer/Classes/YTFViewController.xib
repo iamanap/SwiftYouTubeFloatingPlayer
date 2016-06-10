@@ -33,7 +33,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Qe-H2-zqa">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mVV-1S-IXa">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mVV-1S-IXa">
                             <rect key="frame" x="0.0" y="180" width="320" height="388"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </tableView>
@@ -64,7 +64,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7E7-qJ-KNO" userLabel="Footer View">
                             <rect key="frame" x="0.0" y="136" width="320" height="44"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tt5-IW-Rhy">
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tt5-IW-Rhy">
                                     <rect key="frame" x="4" y="7" width="30" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="tt5-IW-Rhy" secondAttribute="height" multiplier="1:1" id="ZOc-8Z-n1m"/>
@@ -74,7 +74,7 @@
                                         <action selector="playTouched:" destination="-1" eventType="touchUpInside" id="nhD-CA-DMG"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xST-Jd-HNU">
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xST-Jd-HNU">
                                     <rect key="frame" x="39" y="16" width="32" height="11"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="11" id="ZT0-27-y5Q"/>
@@ -84,7 +84,7 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0l8-MD-rzm">
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0l8-MD-rzm">
                                     <rect key="frame" x="249" y="17" width="32" height="11"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="11" id="0bb-Lp-A9V"/>
@@ -94,7 +94,7 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXu-4o-OW4">
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXu-4o-OW4">
                                     <rect key="frame" x="286" y="7" width="30" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="sXu-4o-OW4" secondAttribute="height" multiplier="1:1" id="URe-3f-jXh"/>
@@ -104,12 +104,12 @@
                                         <action selector="fullScreenTouched:" destination="-1" eventType="touchUpInside" id="n7v-YJ-omz"/>
                                     </connections>
                                 </button>
-                                <progressView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-aK-mJg" customClass="CustomProgress" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
+                                <progressView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-aK-mJg" customClass="CustomProgress" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
                                     <rect key="frame" x="76" y="21" width="168" height="2"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </progressView>
-                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="gMF-3a-S9d" customClass="CustomSlider" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
+                                <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="gMF-3a-S9d" customClass="CustomSlider" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
                                     <rect key="frame" x="74" y="6" width="172" height="31"/>
                                     <color key="tintColor" red="0.85416666666666663" green="0.0083327276709560909" blue="0.01632961403612402" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
@@ -138,7 +138,7 @@
                                 <constraint firstItem="0l8-MD-rzm" firstAttribute="leading" secondItem="gMF-3a-S9d" secondAttribute="trailing" constant="5" id="zrU-BL-UvF"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-GH-Get" customClass="YTDPopupCloseButton" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
+                        <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-GH-Get" customClass="YTFPopupCloseButton" customModule="YouTubeFloatingPlayer" customModuleProvider="target">
                             <rect key="frame" x="12" y="18" width="24" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="24" id="g66-CS-nhb"/>

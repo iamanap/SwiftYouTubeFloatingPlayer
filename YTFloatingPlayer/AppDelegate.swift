@@ -17,18 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-//        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-//        let dragController: YTDViewController = YTDViewController(nibName: "YTDViewController", bundle: nil)
-//        dragController.view.frame = (self.window?.frame)!
-////        self.window?.rootViewController = dragController
-//        dragController.modalPresentationStyle = UIModalPresentationStyle.Popover
-//        self.window?.makeKeyAndVisible()
-        
         return true
     }
     
     func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.All
+        return UIInterfaceOrientationMask.Portrait
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -16,13 +16,13 @@ enum UIPanGestureRecognizerDirection {
     case Right
 }
 
-extension YTDViewController {
+extension YTFViewController {
     
     //MARK: Player Controls Animations
     
     func showPlayerControls() {
         if (!isMinimized) {
-            UIView.animateWithDuration(1.0, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            UIView.animateWithDuration(0.6, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
                 self.backPlayerControlsView.alpha = 0.55
                 self.playerControlsView.alpha = 1.0
                 self.minimizeButton.alpha = 1.0
@@ -30,7 +30,7 @@ extension YTDViewController {
                 }, completion: nil)
             hideTimer?.invalidate()
             hideTimer = nil
-            hideTimer = NSTimer.scheduledTimerWithTimeInterval(4.0, target: self, selector: #selector(YTDViewController.hidePlayerControls(_:)), userInfo: 1.0, repeats: false)
+            hideTimer = NSTimer.scheduledTimerWithTimeInterval(4.0, target: self, selector: #selector(YTFViewController.hidePlayerControls(_:)), userInfo: 1.0, repeats: false)
         }
     }
     
@@ -40,7 +40,7 @@ extension YTDViewController {
             self.playerControlsView.alpha = 0.0
         } else {
             if (isPlaying) {
-                UIView.animateWithDuration(1.0, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+                UIView.animateWithDuration(0.6, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
                     self.backPlayerControlsView.alpha = 0.0
                     self.playerControlsView.alpha = 0.0
                     self.minimizeButton.alpha = 0.0
@@ -53,29 +53,34 @@ extension YTDViewController {
     //MARK: Video Animations
     
     func setPlayerToFullscreen() {
-        UIView.animateWithDuration(0.5, delay: 0.0, options: .CurveEaseInOut, animations: {
+        self.hidePlayerControls(true)
+        
+        UIView.animateWithDuration(0.4, delay: 0.0, options: .CurveEaseInOut, animations: {
             self.minimizeButton.hidden = true
             self.playerView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_2))
             
             self.playerView.frame = CGRectMake(self.initialFirstViewFrame!.origin.x, self.initialFirstViewFrame!.origin.x, self.initialFirstViewFrame!.size.width, self.initialFirstViewFrame!.size.height)
             
-            let originY = self.initialFirstViewFrame!.size.width - self.playerControlsFrame!.height
-            self.backPlayerControlsView.frame.origin.x = self.initialFirstViewFrame!.origin.x
-            self.backPlayerControlsView.frame.origin.y = originY
-            self.backPlayerControlsView.frame.size.width = self.initialFirstViewFrame!.size.height
-            
-            self.playerControlsView.frame.origin.x = self.initialFirstViewFrame!.origin.x
-            self.playerControlsView.frame.origin.y = originY
-            self.playerControlsView.frame.size.width = self.initialFirstViewFrame!.size.height
-            
             }, completion: { finished in
                 self.isFullscreen = true
                 self.fullscreen.setImage(UIImage(named: "unfullscreen"), forState: UIControlState.Normal)
+                
+                let originY = self.initialFirstViewFrame!.size.width - self.playerControlsFrame!.height
+                
+                self.backPlayerControlsView.frame.origin.x = self.initialFirstViewFrame!.origin.x
+                self.backPlayerControlsView.frame.origin.y = originY
+                self.backPlayerControlsView.frame.size.width = self.initialFirstViewFrame!.size.height
+                
+                self.playerControlsView.frame.origin.x = self.initialFirstViewFrame!.origin.x
+                self.playerControlsView.frame.origin.y = originY
+                self.playerControlsView.frame.size.width = self.initialFirstViewFrame!.size.height
+                
+                self.showPlayerControls()
         })
     }
     
     func setPlayerToNormalScreen() {
-        UIView.animateWithDuration(0.5, delay: 0.0, options: .CurveEaseInOut, animations: {
+        UIView.animateWithDuration(0.4, delay: 0.0, options: .CurveEaseInOut, animations: {
             self.playerView.transform = CGAffineTransformMakeRotation(0)
             
             self.playerView.frame = CGRectMake(self.playerViewFrame!.origin.x, self.playerViewFrame!.origin.x, self.playerViewFrame!.size.width, self.playerViewFrame!.size.height)
@@ -344,7 +349,7 @@ extension YTDViewController {
                     self.playerView.removeGestureRecognizer(playerGesture)
                 }
                 self.playerTapGesture = nil
-                self.playerTapGesture = UITapGestureRecognizer(target: self, action: #selector(YTDViewController.expandViews))
+                self.playerTapGesture = UITapGestureRecognizer(target: self, action: #selector(YTFViewController.expandViews))
                 self.playerView.addGestureRecognizer(self.playerTapGesture!)
         })
     }
@@ -361,7 +366,7 @@ extension YTDViewController {
                 self.minimizeButton.hidden = false
                 self.playerView.removeGestureRecognizer(self.playerTapGesture!)
                 self.playerTapGesture = nil
-                self.playerTapGesture = UITapGestureRecognizer(target: self, action: #selector(YTDViewController.showPlayerControls))
+                self.playerTapGesture = UITapGestureRecognizer(target: self, action: #selector(YTFViewController.showPlayerControls))
                 self.playerView.addGestureRecognizer(self.playerTapGesture!)
                 self.tableViewContainer.backgroundColor = UIColor.blackColor()
                 self.showPlayerControls()

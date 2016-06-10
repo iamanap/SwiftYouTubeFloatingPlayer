@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YTDPopupCloseButton: UIButton {
+class YTFPopupCloseButton: UIButton {
     var effectView: UIVisualEffectView
     
     override init(frame: CGRect) {
