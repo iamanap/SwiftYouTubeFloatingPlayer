@@ -7,16 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC17BC651D0A0FA0009FCD9C /* CustomProgressSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC5B1D0A0F9F009FCD9C /* CustomProgressSlider.swift */; };
-		CC17BC661D0A0FA0009FCD9C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC5C1D0A0F9F009FCD9C /* PlayerView.swift */; };
-		CC17BC671D0A0FA0009FCD9C /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC5D1D0A0F9F009FCD9C /* VideoCell.swift */; };
-		CC17BC681D0A0FA0009FCD9C /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC5E1D0A0F9F009FCD9C /* VideoCell.xib */; };
-		CC17BC691D0A0FA0009FCD9C /* YTFAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC5F1D0A0F9F009FCD9C /* YTFAnimation.swift */; };
-		CC17BC6A1D0A0FA0009FCD9C /* YTFPlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC601D0A0F9F009FCD9C /* YTFPlayerControls.swift */; };
-		CC17BC6B1D0A0FA0009FCD9C /* YTFPopupCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC611D0A0F9F009FCD9C /* YTFPopupCloseButton.swift */; };
-		CC17BC6C1D0A0FA0009FCD9C /* YTFProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC621D0A0F9F009FCD9C /* YTFProtocol.swift */; };
-		CC17BC6D1D0A0FA0009FCD9C /* YTFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC631D0A0F9F009FCD9C /* YTFViewController.swift */; };
-		CC17BC6E1D0A0FA0009FCD9C /* YTFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC641D0A0F9F009FCD9C /* YTFViewController.xib */; };
 		CC17BC751D0A0FF9009FCD9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC6F1D0A0FF9009FCD9C /* AppDelegate.swift */; };
 		CC17BC761D0A0FF9009FCD9C /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC701D0A0FF9009FCD9C /* NextViewController.swift */; };
 		CC17BC771D0A0FF9009FCD9C /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17BC711D0A0FF9009FCD9C /* Video.swift */; };
@@ -24,19 +14,29 @@
 		CC17BC7D1D0A1005009FCD9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC7B1D0A1005009FCD9C /* Main.storyboard */; };
 		CC17BC801D0A1013009FCD9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC7E1D0A1013009FCD9C /* LaunchScreen.storyboard */; };
 		CC17BC821D0A1021009FCD9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC811D0A1021009FCD9C /* Assets.xcassets */; };
-		CC17BC901D0A1054009FCD9C /* fullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC851D0A1054009FCD9C /* fullscreen.png */; };
-		CC17BC911D0A1054009FCD9C /* fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC861D0A1054009FCD9C /* fullscreen@2x.png */; };
-		CC17BC921D0A1054009FCD9C /* NowPlayingCollapseChevronMask.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC871D0A1054009FCD9C /* NowPlayingCollapseChevronMask.png */; };
-		CC17BC931D0A1054009FCD9C /* NowPlayingCollapseChevronMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC881D0A1054009FCD9C /* NowPlayingCollapseChevronMask@2x.png */; };
-		CC17BC941D0A1054009FCD9C /* NowPlayingCollapseChevronMask@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC891D0A1054009FCD9C /* NowPlayingCollapseChevronMask@3x.png */; };
-		CC17BC951D0A1054009FCD9C /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8A1D0A1054009FCD9C /* pause.png */; };
-		CC17BC961D0A1054009FCD9C /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8B1D0A1054009FCD9C /* pause@2x.png */; };
-		CC17BC971D0A1054009FCD9C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8C1D0A1054009FCD9C /* play.png */; };
-		CC17BC981D0A1054009FCD9C /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8D1D0A1054009FCD9C /* play@2x.png */; };
-		CC17BC991D0A1054009FCD9C /* unfullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8E1D0A1054009FCD9C /* unfullscreen.png */; };
-		CC17BC9A1D0A1054009FCD9C /* unfullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC17BC8F1D0A1054009FCD9C /* unfullscreen@2x.png */; };
 		CCE58F771D0AF3B60048E169 /* YTDraggablePlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F761D0AF3B60048E169 /* YTDraggablePlayerUITests.swift */; };
 		CCE58F791D0AF5B10048E169 /* YTDraggablePlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F781D0AF5B10048E169 /* YTDraggablePlayerTests.swift */; };
+		CCE58F851D0AFFC30048E169 /* CustomProgressSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F7D1D0AFFC30048E169 /* CustomProgressSlider.swift */; };
+		CCE58F861D0AFFC30048E169 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F7E1D0AFFC30048E169 /* PlayerView.swift */; };
+		CCE58F871D0AFFC30048E169 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F7F1D0AFFC30048E169 /* VideoCell.swift */; };
+		CCE58F881D0AFFC30048E169 /* YTFAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F801D0AFFC30048E169 /* YTFAnimation.swift */; };
+		CCE58F891D0AFFC30048E169 /* YTFPlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F811D0AFFC30048E169 /* YTFPlayerControls.swift */; };
+		CCE58F8A1D0AFFC30048E169 /* YTFPopupCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F821D0AFFC30048E169 /* YTFPopupCloseButton.swift */; };
+		CCE58F8B1D0AFFC30048E169 /* YTFProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F831D0AFFC30048E169 /* YTFProtocol.swift */; };
+		CCE58F8C1D0AFFC30048E169 /* YTFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE58F841D0AFFC30048E169 /* YTFViewController.swift */; };
+		CCE58F9A1D0AFFD00048E169 /* fullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F8D1D0AFFD00048E169 /* fullscreen.png */; };
+		CCE58F9B1D0AFFD00048E169 /* fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F8E1D0AFFD00048E169 /* fullscreen@2x.png */; };
+		CCE58F9C1D0AFFD00048E169 /* NowPlayingCollapseChevronMask.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F8F1D0AFFD00048E169 /* NowPlayingCollapseChevronMask.png */; };
+		CCE58F9D1D0AFFD00048E169 /* NowPlayingCollapseChevronMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F901D0AFFD00048E169 /* NowPlayingCollapseChevronMask@2x.png */; };
+		CCE58F9E1D0AFFD00048E169 /* NowPlayingCollapseChevronMask@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F911D0AFFD00048E169 /* NowPlayingCollapseChevronMask@3x.png */; };
+		CCE58F9F1D0AFFD00048E169 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F921D0AFFD00048E169 /* pause.png */; };
+		CCE58FA01D0AFFD00048E169 /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F931D0AFFD00048E169 /* pause@2x.png */; };
+		CCE58FA11D0AFFD00048E169 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F941D0AFFD00048E169 /* play.png */; };
+		CCE58FA21D0AFFD00048E169 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F951D0AFFD00048E169 /* play@2x.png */; };
+		CCE58FA31D0AFFD00048E169 /* unfullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F961D0AFFD00048E169 /* unfullscreen.png */; };
+		CCE58FA41D0AFFD00048E169 /* unfullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F971D0AFFD00048E169 /* unfullscreen@2x.png */; };
+		CCE58FA51D0AFFD00048E169 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F981D0AFFD00048E169 /* VideoCell.xib */; };
+		CCE58FA61D0AFFD00048E169 /* YTFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCE58F991D0AFFD00048E169 /* YTFViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC17BC5B1D0A0F9F009FCD9C /* CustomProgressSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomProgressSlider.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/CustomProgressSlider.swift; sourceTree = SOURCE_ROOT; };
-		CC17BC5C1D0A0F9F009FCD9C /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerView.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/PlayerView.swift; sourceTree = SOURCE_ROOT; };
-		CC17BC5D1D0A0F9F009FCD9C /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCell.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/VideoCell.swift; sourceTree = SOURCE_ROOT; };
-		CC17BC5E1D0A0F9F009FCD9C /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoCell.xib; path = YTFloatingPlayer/YTFloatingPlayer/Classes/VideoCell.xib; sourceTree = SOURCE_ROOT; };
-		CC17BC5F1D0A0F9F009FCD9C /* YTFAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFAnimation.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFAnimation.swift; sourceTree = SOURCE_ROOT; };
-		CC17BC601D0A0F9F009FCD9C /* YTFPlayerControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFPlayerControls.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFPlayerControls.swift; sourceTree = SOURCE_ROOT; };
-		CC17BC611D0A0F9F009FCD9C /* YTFPopupCloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFPopupCloseButton.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFPopupCloseButton.swift; sourceTree = SOURCE_ROOT; };
-		CC17BC621D0A0F9F009FCD9C /* YTFProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFProtocol.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFProtocol.swift; sourceTree = SOURCE_ROOT; };
-		CC17BC631D0A0F9F009FCD9C /* YTFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFViewController.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFViewController.swift; sourceTree = SOURCE_ROOT; };
-		CC17BC641D0A0F9F009FCD9C /* YTFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YTFViewController.xib; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFViewController.xib; sourceTree = SOURCE_ROOT; };
 		CC17BC6F1D0A0FF9009FCD9C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = YTFloatingPlayer/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		CC17BC701D0A0FF9009FCD9C /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NextViewController.swift; path = YTFloatingPlayer/NextViewController.swift; sourceTree = SOURCE_ROOT; };
 		CC17BC711D0A0FF9009FCD9C /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = YTFloatingPlayer/Video.swift; sourceTree = SOURCE_ROOT; };
@@ -74,17 +64,6 @@
 		CC17BC7C1D0A1005009FCD9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YTFloatingPlayer/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		CC17BC7F1D0A1013009FCD9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YTFloatingPlayer/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		CC17BC811D0A1021009FCD9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = YTFloatingPlayer/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		CC17BC851D0A1054009FCD9C /* fullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fullscreen.png; path = YTFloatingPlayer/YTFloatingPlayer/Assets/fullscreen.png; sourceTree = SOURCE_ROOT; };
-		CC17BC861D0A1054009FCD9C /* fullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fullscreen@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/fullscreen@2x.png"; sourceTree = SOURCE_ROOT; };
-		CC17BC871D0A1054009FCD9C /* NowPlayingCollapseChevronMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NowPlayingCollapseChevronMask.png; path = YTFloatingPlayer/YTFloatingPlayer/Assets/NowPlayingCollapseChevronMask.png; sourceTree = SOURCE_ROOT; };
-		CC17BC881D0A1054009FCD9C /* NowPlayingCollapseChevronMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NowPlayingCollapseChevronMask@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/NowPlayingCollapseChevronMask@2x.png"; sourceTree = SOURCE_ROOT; };
-		CC17BC891D0A1054009FCD9C /* NowPlayingCollapseChevronMask@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NowPlayingCollapseChevronMask@3x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/NowPlayingCollapseChevronMask@3x.png"; sourceTree = SOURCE_ROOT; };
-		CC17BC8A1D0A1054009FCD9C /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = YTFloatingPlayer/YTFloatingPlayer/Assets/pause.png; sourceTree = SOURCE_ROOT; };
-		CC17BC8B1D0A1054009FCD9C /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pause@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/pause@2x.png"; sourceTree = SOURCE_ROOT; };
-		CC17BC8C1D0A1054009FCD9C /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = YTFloatingPlayer/YTFloatingPlayer/Assets/play.png; sourceTree = SOURCE_ROOT; };
-		CC17BC8D1D0A1054009FCD9C /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/play@2x.png"; sourceTree = SOURCE_ROOT; };
-		CC17BC8E1D0A1054009FCD9C /* unfullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unfullscreen.png; path = YTFloatingPlayer/YTFloatingPlayer/Assets/unfullscreen.png; sourceTree = SOURCE_ROOT; };
-		CC17BC8F1D0A1054009FCD9C /* unfullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unfullscreen@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Assets/unfullscreen@2x.png"; sourceTree = SOURCE_ROOT; };
 		CC17BCA51D0A138F009FCD9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = YTFloatingPlayer/Info.plist; sourceTree = SOURCE_ROOT; };
 		CC17BCA71D0A13A0009FCD9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = YTFloatingPlayerTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		CC17BCA91D0A13A9009FCD9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = YTFloatingPlayerUITests/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -93,6 +72,27 @@
 		CC4247AB1CEE3E1C009D960F /* YouTubeFloatingPlayer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeFloatingPlayer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE58F761D0AF3B60048E169 /* YTDraggablePlayerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTDraggablePlayerUITests.swift; path = YTFloatingPlayerUITests/YTDraggablePlayerUITests.swift; sourceTree = SOURCE_ROOT; };
 		CCE58F781D0AF5B10048E169 /* YTDraggablePlayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTDraggablePlayerTests.swift; path = YTFloatingPlayerTests/YTDraggablePlayerTests.swift; sourceTree = SOURCE_ROOT; };
+		CCE58F7D1D0AFFC30048E169 /* CustomProgressSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomProgressSlider.swift; path = YTFloatingPlayer/Classes/CustomProgressSlider.swift; sourceTree = SOURCE_ROOT; };
+		CCE58F7E1D0AFFC30048E169 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerView.swift; path = YTFloatingPlayer/Classes/PlayerView.swift; sourceTree = SOURCE_ROOT; };
+		CCE58F7F1D0AFFC30048E169 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCell.swift; path = YTFloatingPlayer/Classes/VideoCell.swift; sourceTree = SOURCE_ROOT; };
+		CCE58F801D0AFFC30048E169 /* YTFAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFAnimation.swift; path = YTFloatingPlayer/Classes/YTFAnimation.swift; sourceTree = SOURCE_ROOT; };
+		CCE58F811D0AFFC30048E169 /* YTFPlayerControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFPlayerControls.swift; path = YTFloatingPlayer/Classes/YTFPlayerControls.swift; sourceTree = SOURCE_ROOT; };
+		CCE58F821D0AFFC30048E169 /* YTFPopupCloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFPopupCloseButton.swift; path = YTFloatingPlayer/Classes/YTFPopupCloseButton.swift; sourceTree = SOURCE_ROOT; };
+		CCE58F831D0AFFC30048E169 /* YTFProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFProtocol.swift; path = YTFloatingPlayer/Classes/YTFProtocol.swift; sourceTree = SOURCE_ROOT; };
+		CCE58F841D0AFFC30048E169 /* YTFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFViewController.swift; path = YTFloatingPlayer/Classes/YTFViewController.swift; sourceTree = SOURCE_ROOT; };
+		CCE58F8D1D0AFFD00048E169 /* fullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fullscreen.png; path = YTFloatingPlayer/Resources/fullscreen.png; sourceTree = SOURCE_ROOT; };
+		CCE58F8E1D0AFFD00048E169 /* fullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fullscreen@2x.png"; path = "YTFloatingPlayer/Resources/fullscreen@2x.png"; sourceTree = SOURCE_ROOT; };
+		CCE58F8F1D0AFFD00048E169 /* NowPlayingCollapseChevronMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NowPlayingCollapseChevronMask.png; path = YTFloatingPlayer/Resources/NowPlayingCollapseChevronMask.png; sourceTree = SOURCE_ROOT; };
+		CCE58F901D0AFFD00048E169 /* NowPlayingCollapseChevronMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NowPlayingCollapseChevronMask@2x.png"; path = "YTFloatingPlayer/Resources/NowPlayingCollapseChevronMask@2x.png"; sourceTree = SOURCE_ROOT; };
+		CCE58F911D0AFFD00048E169 /* NowPlayingCollapseChevronMask@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NowPlayingCollapseChevronMask@3x.png"; path = "YTFloatingPlayer/Resources/NowPlayingCollapseChevronMask@3x.png"; sourceTree = SOURCE_ROOT; };
+		CCE58F921D0AFFD00048E169 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = YTFloatingPlayer/Resources/pause.png; sourceTree = SOURCE_ROOT; };
+		CCE58F931D0AFFD00048E169 /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pause@2x.png"; path = "YTFloatingPlayer/Resources/pause@2x.png"; sourceTree = SOURCE_ROOT; };
+		CCE58F941D0AFFD00048E169 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = YTFloatingPlayer/Resources/play.png; sourceTree = SOURCE_ROOT; };
+		CCE58F951D0AFFD00048E169 /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play@2x.png"; path = "YTFloatingPlayer/Resources/play@2x.png"; sourceTree = SOURCE_ROOT; };
+		CCE58F961D0AFFD00048E169 /* unfullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unfullscreen.png; path = YTFloatingPlayer/Resources/unfullscreen.png; sourceTree = SOURCE_ROOT; };
+		CCE58F971D0AFFD00048E169 /* unfullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unfullscreen@2x.png"; path = "YTFloatingPlayer/Resources/unfullscreen@2x.png"; sourceTree = SOURCE_ROOT; };
+		CCE58F981D0AFFD00048E169 /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoCell.xib; path = YTFloatingPlayer/Resources/VideoCell.xib; sourceTree = SOURCE_ROOT; };
+		CCE58F991D0AFFD00048E169 /* YTFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YTFViewController.xib; path = YTFloatingPlayer/Resources/YTFViewController.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,48 +180,46 @@
 		CC4248081CEE472C009D960F /* YTFPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				CC4248091CEE472C009D960F /* Assets */,
-				CC4248121CEE472C009D960F /* Classes */,
+				CCE58F7C1D0AFFB20048E169 /* Resources */,
+				CCE58F7B1D0AFFAC0048E169 /* Classes */,
 			);
 			name = YTFPlayer;
 			path = YTDraggableVideoPlayer;
 			sourceTree = "<group>";
 		};
-		CC4248091CEE472C009D960F /* Assets */ = {
+		CCE58F7B1D0AFFAC0048E169 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CC17BC851D0A1054009FCD9C /* fullscreen.png */,
-				CC17BC861D0A1054009FCD9C /* fullscreen@2x.png */,
-				CC17BC871D0A1054009FCD9C /* NowPlayingCollapseChevronMask.png */,
-				CC17BC881D0A1054009FCD9C /* NowPlayingCollapseChevronMask@2x.png */,
-				CC17BC891D0A1054009FCD9C /* NowPlayingCollapseChevronMask@3x.png */,
-				CC17BC8A1D0A1054009FCD9C /* pause.png */,
-				CC17BC8B1D0A1054009FCD9C /* pause@2x.png */,
-				CC17BC8C1D0A1054009FCD9C /* play.png */,
-				CC17BC8D1D0A1054009FCD9C /* play@2x.png */,
-				CC17BC8E1D0A1054009FCD9C /* unfullscreen.png */,
-				CC17BC8F1D0A1054009FCD9C /* unfullscreen@2x.png */,
-			);
-			name = Assets;
-			path = YTFloatingPlayer/YTFloatingPlayer/Assets;
-			sourceTree = "<group>";
-		};
-		CC4248121CEE472C009D960F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CC17BC5B1D0A0F9F009FCD9C /* CustomProgressSlider.swift */,
-				CC17BC5C1D0A0F9F009FCD9C /* PlayerView.swift */,
-				CC17BC5D1D0A0F9F009FCD9C /* VideoCell.swift */,
-				CC17BC5E1D0A0F9F009FCD9C /* VideoCell.xib */,
-				CC17BC5F1D0A0F9F009FCD9C /* YTFAnimation.swift */,
-				CC17BC601D0A0F9F009FCD9C /* YTFPlayerControls.swift */,
-				CC17BC611D0A0F9F009FCD9C /* YTFPopupCloseButton.swift */,
-				CC17BC621D0A0F9F009FCD9C /* YTFProtocol.swift */,
-				CC17BC631D0A0F9F009FCD9C /* YTFViewController.swift */,
-				CC17BC641D0A0F9F009FCD9C /* YTFViewController.xib */,
+				CCE58F7D1D0AFFC30048E169 /* CustomProgressSlider.swift */,
+				CCE58F7E1D0AFFC30048E169 /* PlayerView.swift */,
+				CCE58F7F1D0AFFC30048E169 /* VideoCell.swift */,
+				CCE58F801D0AFFC30048E169 /* YTFAnimation.swift */,
+				CCE58F811D0AFFC30048E169 /* YTFPlayerControls.swift */,
+				CCE58F821D0AFFC30048E169 /* YTFPopupCloseButton.swift */,
+				CCE58F831D0AFFC30048E169 /* YTFProtocol.swift */,
+				CCE58F841D0AFFC30048E169 /* YTFViewController.swift */,
 			);
 			name = Classes;
-			path = YTFloatingPlayer/YTFloatingPlayer/Classes;
+			sourceTree = "<group>";
+		};
+		CCE58F7C1D0AFFB20048E169 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCE58F8D1D0AFFD00048E169 /* fullscreen.png */,
+				CCE58F8E1D0AFFD00048E169 /* fullscreen@2x.png */,
+				CCE58F8F1D0AFFD00048E169 /* NowPlayingCollapseChevronMask.png */,
+				CCE58F901D0AFFD00048E169 /* NowPlayingCollapseChevronMask@2x.png */,
+				CCE58F911D0AFFD00048E169 /* NowPlayingCollapseChevronMask@3x.png */,
+				CCE58F921D0AFFD00048E169 /* pause.png */,
+				CCE58F931D0AFFD00048E169 /* pause@2x.png */,
+				CCE58F941D0AFFD00048E169 /* play.png */,
+				CCE58F951D0AFFD00048E169 /* play@2x.png */,
+				CCE58F961D0AFFD00048E169 /* unfullscreen.png */,
+				CCE58F971D0AFFD00048E169 /* unfullscreen@2x.png */,
+				CCE58F981D0AFFD00048E169 /* VideoCell.xib */,
+				CCE58F991D0AFFD00048E169 /* YTFViewController.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,22 +327,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC17BC9A1D0A1054009FCD9C /* unfullscreen@2x.png in Resources */,
-				CC17BC681D0A0FA0009FCD9C /* VideoCell.xib in Resources */,
-				CC17BC951D0A1054009FCD9C /* pause.png in Resources */,
+				CCE58FA51D0AFFD00048E169 /* VideoCell.xib in Resources */,
+				CCE58F9C1D0AFFD00048E169 /* NowPlayingCollapseChevronMask.png in Resources */,
+				CCE58F9A1D0AFFD00048E169 /* fullscreen.png in Resources */,
+				CCE58FA21D0AFFD00048E169 /* play@2x.png in Resources */,
+				CCE58F9B1D0AFFD00048E169 /* fullscreen@2x.png in Resources */,
 				CC17BC821D0A1021009FCD9C /* Assets.xcassets in Resources */,
 				CC17BC7D1D0A1005009FCD9C /* Main.storyboard in Resources */,
-				CC17BC991D0A1054009FCD9C /* unfullscreen.png in Resources */,
-				CC17BC901D0A1054009FCD9C /* fullscreen.png in Resources */,
+				CCE58F9F1D0AFFD00048E169 /* pause.png in Resources */,
+				CCE58FA61D0AFFD00048E169 /* YTFViewController.xib in Resources */,
 				CC17BC801D0A1013009FCD9C /* LaunchScreen.storyboard in Resources */,
-				CC17BC931D0A1054009FCD9C /* NowPlayingCollapseChevronMask@2x.png in Resources */,
-				CC17BC6E1D0A0FA0009FCD9C /* YTFViewController.xib in Resources */,
-				CC17BC911D0A1054009FCD9C /* fullscreen@2x.png in Resources */,
-				CC17BC921D0A1054009FCD9C /* NowPlayingCollapseChevronMask.png in Resources */,
-				CC17BC971D0A1054009FCD9C /* play.png in Resources */,
-				CC17BC941D0A1054009FCD9C /* NowPlayingCollapseChevronMask@3x.png in Resources */,
-				CC17BC981D0A1054009FCD9C /* play@2x.png in Resources */,
-				CC17BC961D0A1054009FCD9C /* pause@2x.png in Resources */,
+				CCE58FA41D0AFFD00048E169 /* unfullscreen@2x.png in Resources */,
+				CCE58FA11D0AFFD00048E169 /* play.png in Resources */,
+				CCE58FA01D0AFFD00048E169 /* pause@2x.png in Resources */,
+				CCE58F9E1D0AFFD00048E169 /* NowPlayingCollapseChevronMask@3x.png in Resources */,
+				CCE58FA31D0AFFD00048E169 /* unfullscreen.png in Resources */,
+				CCE58F9D1D0AFFD00048E169 /* NowPlayingCollapseChevronMask@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,18 +367,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC17BC6C1D0A0FA0009FCD9C /* YTFProtocol.swift in Sources */,
-				CC17BC6A1D0A0FA0009FCD9C /* YTFPlayerControls.swift in Sources */,
-				CC17BC691D0A0FA0009FCD9C /* YTFAnimation.swift in Sources */,
+				CCE58F8B1D0AFFC30048E169 /* YTFProtocol.swift in Sources */,
+				CCE58F891D0AFFC30048E169 /* YTFPlayerControls.swift in Sources */,
+				CCE58F881D0AFFC30048E169 /* YTFAnimation.swift in Sources */,
+				CCE58F851D0AFFC30048E169 /* CustomProgressSlider.swift in Sources */,
+				CCE58F8C1D0AFFC30048E169 /* YTFViewController.swift in Sources */,
+				CCE58F871D0AFFC30048E169 /* VideoCell.swift in Sources */,
 				CC17BC751D0A0FF9009FCD9C /* AppDelegate.swift in Sources */,
-				CC17BC651D0A0FA0009FCD9C /* CustomProgressSlider.swift in Sources */,
+				CCE58F8A1D0AFFC30048E169 /* YTFPopupCloseButton.swift in Sources */,
 				CC17BC761D0A0FF9009FCD9C /* NextViewController.swift in Sources */,
-				CC17BC6D1D0A0FA0009FCD9C /* YTFViewController.swift in Sources */,
+				CCE58F861D0AFFC30048E169 /* PlayerView.swift in Sources */,
 				CC17BC7A1D0A0FF9009FCD9C /* ViewController.swift in Sources */,
 				CC17BC771D0A0FF9009FCD9C /* Video.swift in Sources */,
-				CC17BC671D0A0FA0009FCD9C /* VideoCell.swift in Sources */,
-				CC17BC6B1D0A0FA0009FCD9C /* YTFPopupCloseButton.swift in Sources */,
-				CC17BC661D0A0FA0009FCD9C /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
