@@ -3,9 +3,21 @@
 A Swift floating/draggable player like YouTube that remains on top of all screens until it's removed.
 Based on [PlayerView](https://github.com/davidlondono/PlayerView) and [DraggableYoutubeFloatingVideo](https://github.com/vizllx/DraggableYoutubeFloatingVideo).
 
+## Requirements
+
+Currently YTF view is only supported on applications supporting only portrait orientations. To implement that you must put this in your AppDelegate:
+```swift
+func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> UIInterfaceOrientationMask {
+    return UIInterfaceOrientationMask.Portrait
+}
+```
+
+## Installation
+Copy Classes and Resources folders to your project.
+
 ## Usage
 
-Adopt YTFProtocol on the ViewController you'll show:
+Adopt YTFProtocol on all ViewControllers you'll interact with YTF view:
 ```swift
 class ViewController: UIViewController, YTFProtocol
 ```
@@ -24,13 +36,9 @@ Show YTF view passing a ViewCtroller:
 showYTFView(self)
 ```
 
-## Requirements
-
-Currently YTF view is only supported on applications supporting only portrait orientations. To implement that you must put this in your AppDelegate:
+Remove YTF view:
 ```swift
-func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> UIInterfaceOrientationMask {
-    return UIInterfaceOrientationMask.Portrait
-}
+finishYTFView()
 ```
 
 ## Author
