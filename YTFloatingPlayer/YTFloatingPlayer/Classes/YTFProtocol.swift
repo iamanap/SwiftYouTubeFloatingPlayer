@@ -12,7 +12,7 @@ protocol YTFProtocol { }
 
 extension YTFProtocol {
     
-    func initYTF(url: NSURL, tableCellNibName: String?, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+    func initYTF(url: NSURL, tableCellNibName: String, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
         if (dragViewController != nil) {
             finishYTFView()
         }
@@ -20,14 +20,10 @@ extension YTFProtocol {
         dragViewController?.urls = [url]
         dragViewController?.delegate = delegate
         dragViewController?.dataSource = dataSource
-        if let tableCellNib = tableCellNibName {
-            dragViewController?.tableCellNibName = tableCellNib
-        } else {
-            dragViewController?.tableCellNibName = "VideoCell"
-        }
+        dragViewController?.tableCellNibName = tableCellNibName
     }
     
-    func initYTF(urls: [NSURL], tableCellNibName: String?, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+    func initYTF(urls: [NSURL], tableCellNibName: String, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
         if (dragViewController != nil) {
             finishYTFView()
         }
@@ -35,11 +31,7 @@ extension YTFProtocol {
         dragViewController?.urls = urls
         dragViewController?.delegate = delegate
         dragViewController?.dataSource = dataSource
-        if let tableCellNib = tableCellNibName {
-            dragViewController?.tableCellNibName = tableCellNib
-        } else {
-            dragViewController?.tableCellNibName = "VideoCell"
-        }
+        dragViewController?.tableCellNibName = tableCellNibName
     }
     
     func showYTFView(viewController: UIViewController) {

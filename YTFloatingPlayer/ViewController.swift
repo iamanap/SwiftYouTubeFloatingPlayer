@@ -39,7 +39,7 @@ class ViewController: UIViewController, YTFProtocol {
         for video in videos {
             urls.append(video.url)
         }
-        initYTF(urls, tableCellNibName: nil, delegate: self, dataSource: self)
+        initYTF(urls, tableCellNibName: "VideoCell", delegate: self, dataSource: self)
         showYTFView(self)
     }
     

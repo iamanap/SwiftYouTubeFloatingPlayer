@@ -22,16 +22,12 @@ Adopt YTFProtocol on all ViewControllers you'll interact with YTF view:
 class ViewController: UIViewController, YTFProtocol
 ```
 
-Pass a NSURL or [NSURL], customize the tableView on YTF view adopting delegate and dataSource in your ViewController before passing them as parameters and, if wanted, also provide a nib for cell customization:
+Pass a NSURL or [NSURL], customize the tableView on YTF view adopting delegate and dataSource in your ViewController before passing them as parameters and also provide a nib for cell customization:
 ```swift
 initYTF(urls, tableCellNibName: "MyCell", delegate: self, dataSource: self)
 ```
-or
-```swift
-initYTF(urls, tableCellNibName: nil, delegate: self, dataSource: self)
-```
 
-Show YTF view passing a ViewCtroller:
+Show YTF view passing a ViewController:
 ```swift
 showYTFView(self)
 ```
