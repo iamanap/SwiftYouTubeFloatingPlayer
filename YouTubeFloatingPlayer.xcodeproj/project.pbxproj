@@ -21,7 +21,7 @@
 		CC6C23C51D0B165E00C3BBCA /* YTFAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C23BE1D0B165E00C3BBCA /* YTFAnimation.swift */; };
 		CC6C23C61D0B165E00C3BBCA /* YTFPlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C23BF1D0B165E00C3BBCA /* YTFPlayerControls.swift */; };
 		CC6C23C71D0B165E00C3BBCA /* YTFPopupCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C23C01D0B165E00C3BBCA /* YTFPopupCloseButton.swift */; };
-		CC6C23C81D0B165E00C3BBCA /* YTFProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C23C11D0B165E00C3BBCA /* YTFProtocol.swift */; };
+		CC6C23C81D0B165E00C3BBCA /* YTFPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C23C11D0B165E00C3BBCA /* YTFPlayer.swift */; };
 		CC6C23C91D0B165E00C3BBCA /* YTFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6C23C21D0B165E00C3BBCA /* YTFViewController.swift */; };
 		CC6C23D61D0B166400C3BBCA /* fullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CC6C23CA1D0B166400C3BBCA /* fullscreen.png */; };
 		CC6C23D71D0B166400C3BBCA /* fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC6C23CB1D0B166400C3BBCA /* fullscreen@2x.png */; };
@@ -77,7 +77,7 @@
 		CC6C23BE1D0B165E00C3BBCA /* YTFAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFAnimation.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFAnimation.swift; sourceTree = SOURCE_ROOT; };
 		CC6C23BF1D0B165E00C3BBCA /* YTFPlayerControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFPlayerControls.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFPlayerControls.swift; sourceTree = SOURCE_ROOT; };
 		CC6C23C01D0B165E00C3BBCA /* YTFPopupCloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFPopupCloseButton.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFPopupCloseButton.swift; sourceTree = SOURCE_ROOT; };
-		CC6C23C11D0B165E00C3BBCA /* YTFProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFProtocol.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFProtocol.swift; sourceTree = SOURCE_ROOT; };
+		CC6C23C11D0B165E00C3BBCA /* YTFPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFPlayer.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFPlayer.swift; sourceTree = SOURCE_ROOT; };
 		CC6C23C21D0B165E00C3BBCA /* YTFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YTFViewController.swift; path = YTFloatingPlayer/YTFloatingPlayer/Classes/YTFViewController.swift; sourceTree = SOURCE_ROOT; };
 		CC6C23CA1D0B166400C3BBCA /* fullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fullscreen.png; path = YTFloatingPlayer/YTFloatingPlayer/Resources/fullscreen.png; sourceTree = SOURCE_ROOT; };
 		CC6C23CB1D0B166400C3BBCA /* fullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fullscreen@2x.png"; path = "YTFloatingPlayer/YTFloatingPlayer/Resources/fullscreen@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -197,7 +197,7 @@
 				CC6C23BE1D0B165E00C3BBCA /* YTFAnimation.swift */,
 				CC6C23BF1D0B165E00C3BBCA /* YTFPlayerControls.swift */,
 				CC6C23C01D0B165E00C3BBCA /* YTFPopupCloseButton.swift */,
-				CC6C23C11D0B165E00C3BBCA /* YTFProtocol.swift */,
+				CC6C23C11D0B165E00C3BBCA /* YTFPlayer.swift */,
 				CC6C23C21D0B165E00C3BBCA /* YTFViewController.swift */,
 			);
 			name = Classes;
@@ -368,7 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6C23C81D0B165E00C3BBCA /* YTFProtocol.swift in Sources */,
+				CC6C23C81D0B165E00C3BBCA /* YTFPlayer.swift in Sources */,
 				CC6C23C61D0B165E00C3BBCA /* YTFPlayerControls.swift in Sources */,
 				CC6C23C51D0B165E00C3BBCA /* YTFAnimation.swift in Sources */,
 				CC6C23B81D0B159400C3BBCA /* VideoCell.swift in Sources */,
