@@ -11,30 +11,28 @@ func application(application: UIApplication, supportedInterfaceOrientationsForWi
     return UIInterfaceOrientationMask.Portrait
 }
 ```
+## Screen Cast
+[SwiftYouTubeFloatingPlayer](https://youtu.be/AdOxohhO_Pc)
+
 
 ## Installation
 Copy Classes and Resources folders to your project.
 
 ## Usage
 
-Adopt YTFProtocol on all ViewControllers you'll interact with YTF view:
-```swift
-class ViewController: UIViewController, YTFProtocol
-```
-
 Pass a NSURL or [NSURL], customize the tableView on YTF view adopting delegate and dataSource in your ViewController before passing them as parameters and also provide a nib for cell customization:
 ```swift
-initYTF(urls, tableCellNibName: "MyCell", delegate: self, dataSource: self)
+YTFPlayer.initYTF(urls, tableCellNibName: "MyCell", delegate: self, dataSource: self)
 ```
 
 Show YTF view passing a ViewController:
 ```swift
-showYTFView(self)
+YTFPlayer.showYTFView(self)
 ```
 
-Remove YTF view:
+Remove YTF view animated(true) or not(false):
 ```swift
-finishYTFView()
+YTFPlayer.finishYTFView(true)
 ```
 
 ## Author
