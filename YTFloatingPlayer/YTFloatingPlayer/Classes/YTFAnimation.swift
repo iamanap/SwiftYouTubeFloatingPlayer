@@ -331,16 +331,20 @@ extension YTFViewController {
         let trueOffset = initialFirstViewFrame!.size.height - 100
         let xOffset = initialFirstViewFrame!.size.width - 160
         
-        viewMinimizedFrame!.origin.y = trueOffset
+        viewMinimizedFrame!.origin.y = trueOffset + 2
         viewMinimizedFrame!.origin.x = xOffset - 6
         viewMinimizedFrame!.size.width = initialFirstViewFrame!.size.width
         
         playerViewMinimizedFrame!.size.width = self.view.bounds.size.width - xOffset
-        playerViewMinimizedFrame!.size.height = 200 - xOffset * 0.5
+        playerViewMinimizedFrame!.size.height = playerViewMinimizedFrame!.size.width / (16/9)
         
         UIView.animateWithDuration(0.5, delay: 0.0, options: .CurveEaseOut, animations: {
             self.playerView.frame = self.playerViewMinimizedFrame!
             self.view.frame = self.viewMinimizedFrame!
+            
+            self.playerView.layer.borderWidth = 1
+            self.playerView.layer.borderColor = UIColor(red:255/255.0, green:255/255.0, blue:255/255.0, alpha: 0.5).CGColor
+            
             self.tableViewContainer.alpha = 0.0
             self.transparentView?.alpha = 0.0
             }, completion: { finished in
@@ -351,6 +355,10 @@ extension YTFViewController {
                 self.playerTapGesture = nil
                 self.playerTapGesture = UITapGestureRecognizer(target: self, action: #selector(YTFViewController.expandViews))
                 self.playerView.addGestureRecognizer(self.playerTapGesture!)
+                
+                self.view.frame.size.height = self.playerView.frame.height
+                
+                UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: .Fade)
         })
     }
     
@@ -373,6 +381,20 @@ extension YTFViewController {
         })
     }
     
+    func finishViewAnimated(animated: Bool) {
+        if (animated) {
+            UIView.animateWithDuration(0.5, delay: 0.0, options: .CurveEaseInOut, animations: {
+                self.view.frame = CGRectMake(0.0, self.view!.frame.origin.y, self.view!.frame.size.width, self.view!.frame.size.height)
+                self.view.alpha = 0.0
+                
+                }, completion: { finished in
+                    self.removeViews()
+            })
+        } else {
+            removeViews()
+        }
+    }
+    
     func removeViews() {
         self.view.removeFromSuperview()
         self.playerView.resetPlayer()
@@ -380,6 +402,8 @@ extension YTFViewController {
         self.tableView.removeFromSuperview()
         self.tableViewContainer.removeFromSuperview()
         self.transparentView?.removeFromSuperview()
+        self.playerControlsView.removeFromSuperview()
+        self.backPlayerControlsView.removeFromSuperview()
     }
     
 }

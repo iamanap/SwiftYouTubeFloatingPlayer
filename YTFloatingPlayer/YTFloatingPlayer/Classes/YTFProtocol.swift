@@ -8,63 +8,83 @@
 
 import UIKit
 
-protocol YTFProtocol { }
-
-extension YTFProtocol {
-    
-    func initYTF(url: NSURL, tableCellNibName: String, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
-        if (dragViewController != nil) {
-            finishYTFView()
+public struct YTFPlayer {
+    public static func initYTF(url: NSURL, tableCellNibName: String, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+        if (dragViewController == nil) {
+            dragViewController = YTFViewController(nibName: "YTFViewController", bundle: nil)
         }
-        dragViewController = YTFViewController(nibName: "YTFViewController", bundle: nil)
         dragViewController?.urls = [url]
         dragViewController?.delegate = delegate
         dragViewController?.dataSource = dataSource
         dragViewController?.tableCellNibName = tableCellNibName
     }
     
-    func initYTF(urls: [NSURL], tableCellNibName: String, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
-        if (dragViewController != nil) {
-            finishYTFView()
+    public static func initYTF(urls: [NSURL], tableCellNibName: String, delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+        if (dragViewController == nil) {
+            dragViewController = YTFViewController(nibName: "YTFViewController", bundle: nil)
         }
-        dragViewController = YTFViewController(nibName: "YTFViewController", bundle: nil)
         dragViewController?.urls = urls
         dragViewController?.delegate = delegate
         dragViewController?.dataSource = dataSource
         dragViewController?.tableCellNibName = tableCellNibName
     }
     
-    func showYTFView(viewController: UIViewController) {
-        dragViewController!.view.frame = CGRectMake(viewController.view.frame.size.width-50, viewController.view.frame.size.height-50, viewController.view.frame.size.width, viewController.view.frame.size.height)
-        dragViewController!.initialFirstViewFrame = viewController.view.frame
-        dragViewController!.view.alpha = 0
-        dragViewController!.view.transform = CGAffineTransformMakeScale(0.2, 0.2)
-        dragViewController!.onView = viewController.view
-        
-        UIApplication.sharedApplication().keyWindow?.addSubview(dragViewController!.view)
-        
-        UIView.animateWithDuration(0.5, animations: {
-            dragViewController!.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
-            dragViewController!.view.alpha = 1
-            dragViewController!.view.frame = CGRectMake(viewController.view.frame.origin.x, viewController.view.frame.origin.y, viewController.view.frame.size.width, viewController.view.frame.size.height)
-        })
+    public static func showYTFView(viewController: UIViewController) {
+        if dragViewController!.isOpen == false {
+            dragViewController!.view.frame = CGRectMake(viewController.view.frame.size.width, viewController.view.frame.size.height, viewController.view.frame.size.width, viewController.view.frame.size.height)
+            dragViewController!.view.alpha = 0
+            dragViewController!.view.transform = CGAffineTransformMakeScale(0.2, 0.2)
+            dragViewController!.onView = viewController.view
+            
+            UIApplication.sharedApplication().keyWindow?.addSubview(dragViewController!.view)
+            
+            UIView.animateWithDuration(0.5, animations: {
+                dragViewController!.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
+                dragViewController!.view.alpha = 1
+                
+                dragViewController!.view.frame = CGRectMake(0, 0, UIApplication.sharedApplication().keyWindow!.bounds.width, UIApplication.sharedApplication().keyWindow!.bounds.height)
+                
+                dragViewController!.isOpen = true
+            })
+        }
     }
     
-    func changeURL(url: NSURL) {
+    public static func changeURL(url: NSURL) {
         dragViewController?.urls = [url]
     }
     
-    func changeURLs(urls: [NSURL]) {
+    public static func changeURLs(urls: [NSURL]) {
         dragViewController?.urls = urls
     }
     
-    func playIndex(index: Int) {
+    public static func changeCurrentIndex(index: Int) {
         dragViewController?.currentUrlIndex = index
     }
     
-    func finishYTFView() {
-        dragViewController?.removeViews()
-        dragViewController = nil
+    public static func playIndex(index: Int) {
+        dragViewController?.currentUrlIndex = index
+        dragViewController?.playIndex(index)
+        dragViewController?.hidePlayerControls(true)
+    }
+    
+    public static func getIndex() -> Int {
+        return dragViewController!.currentUrlIndex
+    }
+    
+    public static func isOpen() -> Bool {
+        return dragViewController?.isOpen == true ? true : false
+    }
+    
+    public static func getYTFViewController() -> UIViewController? {
+        return dragViewController
+    }
+    
+    public static func finishYTFView(animated: Bool) {
+        if(dragViewController != nil) {
+            dragViewController?.isOpen = false
+            dragViewController?.finishViewAnimated(animated)
+            dragViewController = nil
+        }
     }
 }
 

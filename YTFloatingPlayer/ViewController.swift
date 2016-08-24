@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, YTFProtocol {
+class ViewController: UIViewController {
     
     let videos = [Video.init(name: "Big Bunny", artist: "Google", url: NSURL(string: "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4")!),
                   Video.init(name: "Robo Toy", artist: "Google", url: NSURL(string: "http://techslides.com/demos/sample-videos/small.mp4")!),
@@ -39,8 +39,8 @@ class ViewController: UIViewController, YTFProtocol {
         for video in videos {
             urls.append(video.url)
         }
-        initYTF(urls, tableCellNibName: "VideoCell", delegate: self, dataSource: self)
-        showYTFView(self)
+        YTFPlayer.initYTF(urls, tableCellNibName: "VideoCell", delegate: self, dataSource: self)
+        YTFPlayer.showYTFView(self)
     }
     
 }
@@ -72,6 +72,6 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        playIndex(indexPath.row)
+        YTFPlayer.playIndex(indexPath.row)
     }
 }

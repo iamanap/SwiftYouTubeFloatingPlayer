@@ -26,6 +26,7 @@ class YTFViewController: UIViewController {
     var delegate: UITableViewDelegate?
     var dataSource: UITableViewDataSource?
     var tableCellNibName: String?
+    var isOpen: Bool = false
     
     var isPlaying: Bool = false
     var isFullscreen: Bool = false
@@ -113,6 +114,7 @@ class YTFViewController: UIViewController {
     }
     
     func calculateFrames() {
+        self.initialFirstViewFrame = self.view.frame
         self.playerViewFrame = self.playerView.frame
         self.tableViewContainerFrame = self.tableViewContainer.frame
         self.playerViewMinimizedFrame = self.playerView.frame

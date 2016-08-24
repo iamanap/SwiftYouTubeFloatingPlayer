@@ -8,9 +8,9 @@
 
 import UIKit
 
-class NextViewController: UIViewController, YTFProtocol {
+class NextViewController: UIViewController {
     
     @IBAction func removePlayer(sender: AnyObject) {
-        finishYTFView()
+        YTFPlayer.finishYTFView(true)
     }
 }
