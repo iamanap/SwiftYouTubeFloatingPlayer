@@ -37,7 +37,7 @@ YTFPlayer.finishYTFView(true)
 
 ## Author
 
-hanappaula, apso0101@gmail.com
+souana, apso0101@gmail.com
 
 ## License
 
